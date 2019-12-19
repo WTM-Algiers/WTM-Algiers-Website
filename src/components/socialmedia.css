@@ -1,0 +1,15 @@
+
+.Social-Media-Button:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.Social-Media-Button {
+    opacity: 0.5;
+    margin: 5%;
+    width: 1.5rem;
+}
+
+.Vertical{
+    display: table-cell;
+}
