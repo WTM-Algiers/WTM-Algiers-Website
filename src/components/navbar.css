@@ -1,0 +1,43 @@
+.nav-bar {
+    display: inline-grid;
+    grid-template-columns: 25% auto;
+    grid-column-gap: 2%;
+    width: 100%;
+}
+
+img {
+    margin: 0% !important;
+}
+
+.logo {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    justify-self: start;
+    align-self: center;
+}
+
+.section-link {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    justify-self: end;
+    align-self: center;
+}
+
+a.navbar-item {
+    opacity: 0.5;
+    font-size: 1.5vw;
+    margin-right: 1.3rem;
+    color: #3f3d56 !important;
+    cursor: pointer;
+}
+
+.is-activated {
+    opacity: 1 !important;
+    text-decoration: underline;
+}
+
+a.navbar-item:hover {
+    background-color: transparent;
+    opacity: 1;
+    text-decoration: underline;
+}

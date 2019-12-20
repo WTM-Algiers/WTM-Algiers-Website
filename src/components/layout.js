@@ -26,15 +26,20 @@ const Layout = ({ children }) => {
   return (
     <div style={{
       background: "#f2f2f2",
-      minHeight:"100vh",
+      minHeight: "100vh",
       textAlign:"center"
     }}>
+      
+      <Header/>
+
       <div
         style={{
           margin: `0 auto`,
           padding: `0px 1.0875rem 1.45rem`,
           paddingTop: 0,
-          display:"inline-block"
+          display: "inline-block",
+          textAlign: "center"
+
         }}
       >
         <main>{children}</main>
