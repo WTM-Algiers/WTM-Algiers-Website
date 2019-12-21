@@ -1,17 +1,34 @@
-import React from "react"
-import "./navbar.css"
-import logo from "../images/logo/WTM\ logo.svg"
+import React from "react";
+import { useState, useEffect } from 'react';
+import "./navbar.css";
+import logo from "../images/logo/WTM\ logo.svg";
+import logoM from "../images/logo/WTM.svg";
+import menubutton from "../images/Icons/menu.svg";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 
-const NavBar = ({ direction }) => (
+const useWindowWidth = () => {
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-    <div className="nav-bar">
+    const handleWindowResize = () => {
+        setWindowWidth(window.innerWidth);
+    };
 
-        <div>
-            <img src={logo} alt="Women TechMakers Algiers" />
-        </div>
+    useEffect(() => {
+        window.addEventListener('resize', handleWindowResize);
+        return () => window.removeEventListener('resize', handleWindowResize);
+    }, []);
 
+    return windowWidth;
+};
+
+
+
+const NavBar = () => {
+
+    const imageUrl = useWindowWidth() >= 650 ? logo : logoM;
+
+    const links = (
         <div className="section-link">
 
             <Link
@@ -74,10 +91,23 @@ const NavBar = ({ direction }) => (
                 CONTACT
             </Link>
         </div>
+    );
 
+    const menuButton = (
+        <div className="menub">
+            <img src={menubutton}  alt="menu button" />
+        </div>
+    );
 
+    return (
 
-    </div>
-)
+        <div className="nav-bar">
+            <div className="logo">
+                <img src={imageUrl} alt="Women TechMakers Algiers" />
+            </div>
+            {useWindowWidth() >= 650 ? links : menuButton}
+        </div>
+    );
+}
 
 export default NavBar

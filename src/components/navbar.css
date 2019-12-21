@@ -5,10 +5,6 @@
     width: 100%;
 }
 
-img {
-    margin: 0% !important;
-}
-
 .logo {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -16,10 +12,22 @@ img {
     align-self: center;
 }
 
+.logo img,.menub img {
+    margin: 0% !important;
+}
+
+
 .section-link {
     grid-column-start: 2;
     grid-column-end: 3;
     justify-self: end;
+    align-self: center;
+}
+
+.menub {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    justify-self: center;
     align-self: center;
 }
 
@@ -40,4 +48,12 @@ a.navbar-item:hover {
     background-color: transparent;
     opacity: 1;
     text-decoration: underline;
+}
+
+@media (max-width: 650px) {
+
+    .nav-bar {
+        grid-template-columns: 15% auto 10%;
+    }
+
 }
