@@ -6,6 +6,7 @@ const Header = () => (
     style={{
       background: `white`,
       position: "fixed",
+      width:"100%"
     }}
   >
     <div
@@ -16,7 +17,7 @@ const Header = () => (
 
       }}
     >
-      <NB />
+      <NB menuelements={["HOME","ABOUT","EVENTS","PARTNERS","CONTACT"]}/>
 
     </div>
   </header>

@@ -1,10 +1,13 @@
 import React from "react";
 import { useState, useEffect } from 'react';
+import { Link, animateScroll as scroll } from "react-scroll";
 import "./navbar.css";
 import logo from "../images/logo/WTM\ logo.svg";
 import logoM from "../images/logo/WTM.svg";
 import menubutton from "../images/Icons/menu.svg";
-import { Link, animateScroll as scroll } from "react-scroll";
+import backbutton from "../images/Icons/back.svg";
+import backgroundImg from "../images/logo/WTM-Main.svg";
+
 
 
 const useWindowWidth = () => {
@@ -23,90 +26,90 @@ const useWindowWidth = () => {
 };
 
 
+const NavBar = ({ menuelements }) => {
 
-const NavBar = () => {
+    const [showMMenu, setshowMMenu] = useState(false);
+
+    const showMenu = () => {
+        setshowMMenu(true);
+    }
+
+    const hideMenu = () => {
+        setshowMMenu(false);
+    }
 
     const imageUrl = useWindowWidth() >= 650 ? logo : logoM;
 
+    const sections = menuelements.map((item, i) => {
+        return <Link
+            key={i}
+            className="navbar-item"
+            activeClass="is-activated"
+            to={"section" + i}
+            spy={true}
+            smooth={true}
+            offset={35}
+            duration={500}
+        >
+            {item}
+        </Link>
+    })
+
+    const Msections = menuelements.map((item, i) => {
+        return <Link
+            key={i}
+            className="Mnavbar-item"
+            activeClass="Mis-activated"
+            to={"section" + i}
+            spy={true}
+            smooth={true}
+            offset={35}
+            duration={500}
+        >
+            {item}
+        </Link>
+    })
+
     const links = (
         <div className="section-link">
-
-            <Link
-                className="navbar-item"
-                activeClass="is-activated"
-                to="section6"
-                spy={true}
-                smooth={true}
-                offset={35}
-                duration={500}
-            >
-                HOME
-            </Link>
-
-            <Link
-                className="navbar-item"
-                activeClass="is-activated"
-                to="section6"
-                spy={true}
-                smooth={true}
-                offset={35}
-                duration={500}
-            >
-                ABOUT
-            </Link>
-
-            <Link
-                className="navbar-item"
-                activeClass="is-activated"
-                to="section6"
-                spy={true}
-                smooth={true}
-                offset={35}
-                duration={500}
-            >
-                EVENTS
-            </Link>
-
-            <Link
-                className="navbar-item"
-                activeClass="is-activated"
-                to="section6"
-                spy={true}
-                smooth={true}
-                offset={35}
-                duration={500}
-            >
-                PARTNERS
-            </Link>
-
-            <Link
-                className="navbar-item"
-                activeClass="is-activated"
-                to="section6"
-                spy={true}
-                smooth={true}
-                offset={35}
-                duration={500}
-            >
-                CONTACT
-            </Link>
+            {sections}
         </div>
     );
 
     const menuButton = (
         <div className="menub">
-            <img src={menubutton}  alt="menu button" />
+            <img src={menubutton} onClick={showMenu} alt="menu button" />
         </div>
     );
 
-    return (
+    const mobileMenu = (
+        <div className="background">
+            <div className="Mcontainer">
+                <div className="back">
+                    <img src={backbutton} onClick={hideMenu} alt="back button" />
+                </div>
+                <div className="Menu">
+                    {Msections}
+                </div>
+            </div>
+            <div className="backgroundimg">
+                <img src={backgroundImg} alt="background" />
+            </div>
 
+        </div>
+    )
+
+    const nav = (
         <div className="nav-bar">
             <div className="logo">
                 <img src={imageUrl} alt="Women TechMakers Algiers" />
             </div>
             {useWindowWidth() >= 650 ? links : menuButton}
         </div>
+    )
+
+    return (
+        showMMenu && mobileMenu || nav
     );
 }
 
