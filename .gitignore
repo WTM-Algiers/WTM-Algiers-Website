@@ -1,0 +1,32 @@
+# Dependency directory
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
+node_modules/
+
+# Future stuff that may come up while building
+public/
+node_modules/
+.cache/
+.netlify
+
+
+# IDE specific
+.idea/
+.vscode/
+*.sw*
+
+
+# lock files
+yarn.lock
+package-lock.json
+
+## future lock files in case we used packages
+packages/*/yarn.lock
+packages/*/package-lock.json
+
+
+# Logs
+logs
+*.log
+
+# Mac folder metadata  
+.DS_Store
