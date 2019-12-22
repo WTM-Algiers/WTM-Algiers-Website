@@ -1,3 +1,22 @@
+# Future stuff that may come up while building
+.cache/
+.netlify
+
+
+# IDE specific
+.idea/
+.vscode/
+*.sw*
+
+
+# lock files
+yarn.lock
+package-lock.json
+
+## future lock files in case we used packages
+packages/*/yarn.lock
+packages/*/package-lock.json
+
 # Logs
 logs
 *.log
