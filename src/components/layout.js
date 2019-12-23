@@ -9,6 +9,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
+import NB from "../components/navbar"
+
 import Header from "./header"
 import "./layout.css"
 
@@ -26,15 +28,21 @@ const Layout = ({ children }) => {
   return (
     <div style={{
       background: "#f2f2f2",
-      minHeight:"100vh",
-      textAlign:"center"
+      minHeight: "100vh",
+      textAlign: "center"
     }}>
+
+      <NB menuelements={["HOME", "ABOUT", "EVENTS", "PARTNERS", "CONTACT"]} />
+
       <div
         style={{
           margin: `0 auto`,
           padding: `0px 1.0875rem 1.45rem`,
           paddingTop: 0,
-          display:"inline-block"
+          display: "inline-block",
+          textAlign: "center",
+          width:"100%"
+
         }}
       >
         <main>{children}</main>
