@@ -32,12 +32,10 @@ const Layout = ({ children }) => {
       textAlign: "center"
     }}>
 
-      <NB menuelements={["HOME", "ABOUT", "EVENTS", "PARTNERS", "CONTACT"]} />
-
+      
       <div
         style={{
           margin: `0 auto`,
-          padding: `0px 1.0875rem 1.45rem`,
           paddingTop: 0,
           display: "inline-block",
           textAlign: "center",
