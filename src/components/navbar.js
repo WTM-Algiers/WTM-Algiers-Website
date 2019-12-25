@@ -11,7 +11,7 @@ import backgroundImg from "../images/logo/WTM-Main.svg";
 
 
 const useWindowWidth = () => {
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const [windowWidth, setWindowWidth] = useState(null);
 
     const handleWindowResize = () => {
         setWindowWidth(window.innerWidth);
@@ -28,7 +28,7 @@ const useWindowWidth = () => {
 
 const NavBar = ({ menuelements }) => {
 
-    let [pos, setPos] = useState(window.pageYOffset)
+    let [pos, setPos] = useState(0)
     let [visible, setVisible] = useState(true)
 
     useEffect(() => {
