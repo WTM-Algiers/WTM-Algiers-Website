@@ -1,7 +1,6 @@
 import React from "react";
 import { useState, useEffect } from 'react';
 import "./landing.css";
-import NB from "../components/navbar"
 import backgroundImg from "../images/logo/WTM-Main.svg";
 import SM from "../components/socialmedia";
 import SMHolder from "../images/shapes/social-media-holder.svg";
@@ -11,9 +10,7 @@ const landing = () => {
 
 
     return (
-        <div>
-            <NB
-                menuelements={["HOME", "ABOUT", "EVENTS", "PARTNERS", "CONTACT"]} />
+        <div className="skewed-bg">
             <div className="landing">
                 <div className="social-media-holder">
                     <div>

@@ -1,8 +1,16 @@
+.skewed-bg {
+    transform: skew(0deg, -5deg);
+    background: #f2f2f2;
+    padding-bottom: 5vw;
+}
+
 .landing {
     display: inline-grid;
     grid-template-columns: 10% auto;
     grid-column-gap: 2%;
     width: 100%;
+    background-color: #f2f2f2;
+    transform: skew(0deg, 5deg);
 }
 
 .social-media-holder {
@@ -73,4 +81,50 @@
     position: absolute;
     border-radius: 2vw;
     margin-left: 15%;
+}
+
+@media (max-width: 650px) {
+    .main-landing img {
+        right: 5%;
+        bottom: -5rem;
+        width: 100%;
+    }
+
+    .main-landing {
+        height: 70%;
+        width: 150%;
+    }
+
+    .shape img {
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+    }
+
+    .landing {
+        height: 180vw;
+    }
+
+    .social-media-holder {
+        width: 250%;
+    }
+
+    .title {
+        width: 250%;
+    }
+
+    .title h1 {
+        font-size: 6.5vw;
+        margin-left: 8%;
+    }
+
+    .title h2 {
+        font-size: 5.5vw;
+        margin-left: 8%;
+    }
+
+    .bar {
+        height: 10%;
+        border-right: 1.3vw solid #5491f5;
+    }
 }
