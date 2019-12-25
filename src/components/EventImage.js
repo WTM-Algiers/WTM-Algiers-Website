@@ -8,7 +8,7 @@ const EventImage = ({ image, width, height }) => {
 }
 
 const Frame = ({ content, width, height }) => {
-  return <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 1144.569 1219.578">
+  return <svg className="image-frame" xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 1144.569 1219.578">
     <g id="Group_476" data-name="Group 476" transform="translate(-301.071 -67.938)">
       <path id="Path_1475" data-name="Path 1475" d="M325.526,633.118C528.6,617.707,770.808,460.411,758.492,298.425S511.6-14.323,308.519,1.088-11.43,319.281.885,481.267C13.2,643.169,122.448,648.613,325.526,633.118Z" transform="translate(301.072 400.637) rotate(-26)" fill="#04c0a6" opacity="0.31" />
       <g id="undraw_arrived_f58d" transform="translate(1114.763 162.98) rotate(39)">
