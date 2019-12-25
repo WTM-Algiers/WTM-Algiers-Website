@@ -28,6 +28,23 @@ const useWindowWidth = () => {
 
 const NavBar = ({ menuelements }) => {
 
+    let [pos, setPos] = useState(window.pageYOffset)
+    let [visible, setVisible] = useState(true)
+
+    useEffect(() => {
+        const handleScroll = () => {
+            let temp = window.pageYOffset
+
+            setVisible(pos < 30);
+            console.log(temp);
+            setPos(temp)
+        };
+        window.addEventListener("scroll", handleScroll);
+        return (() => {
+            window.removeEventListener("scroll", handleScroll);
+        })
+    })
+
     const [showMMenu, setshowMMenu] = useState(false);
 
     const showMenu = () => {
@@ -100,9 +117,9 @@ const NavBar = ({ menuelements }) => {
     )
 
     const nav = (
-        <div className="nav-bar">
+        <div className={!visible?"nav-bar scrolled-menu":"nav-bar"}>
             <div className="logo">
-                <img src={imageUrl} alt="Women TechMakers Algiers" />
+                {!visible?<img src={imageUrl} alt="Women TechMakers Algiers" />:null}
             </div>
             {useWindowWidth() >= 650 ? links : menuButton}
         </div>

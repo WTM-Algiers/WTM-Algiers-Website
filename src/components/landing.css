@@ -22,7 +22,7 @@
 
 .social-links {
     position: absolute;
-    z-index: 3;
+    z-index: 1;
     padding-left: 5%;
     width: 28%;
 }
@@ -69,7 +69,7 @@
 
 .bar {
     height: 20%;
-    border-right: 1vw solid #5491f5;
+    border-right: 0.8vw solid #5491f5;
     position: absolute;
     border-radius: 2vw;
     margin-left: 15%;

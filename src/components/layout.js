@@ -9,7 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import NB from "../components/navbar"
+
 
 import Header from "./header"
 import "./layout.css"
@@ -33,6 +33,7 @@ const Layout = ({ children }) => {
     }}>
 
       
+
       <div
         style={{
           margin: `0 auto`,
