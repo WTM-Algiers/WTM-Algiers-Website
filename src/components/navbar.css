@@ -1,0 +1,134 @@
+.nav-bar {
+    display: inline-grid;
+    grid-template-columns: 25% auto;
+    grid-column-gap: 2%;
+    width: 100%;
+    z-index: 2;
+    position: fixed;
+    margin: 0 auto;
+    padding: 0.8rem 1.8rem 0.8rem 1.8rem;
+}
+
+.scrolled-menu {
+    background-color: white;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .12);
+}
+
+.logo {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    justify-self: start;
+    align-self: center;
+}
+
+.logo img,
+.menub img {
+    margin: 0% !important;
+}
+
+
+.section-link {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    justify-self: end;
+    align-self: center;
+}
+
+.menub {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    justify-self: center;
+    align-self: center;
+}
+
+a.navbar-item {
+    opacity: 0.5;
+    font-size: 1.5vw;
+    margin-right: 1.3rem;
+    color: #3f3d56 !important;
+    cursor: pointer;
+}
+
+.is-activated {
+    opacity: 1 !important;
+    text-decoration: underline;
+}
+
+a.navbar-item:hover {
+    background-color: transparent;
+    opacity: 1;
+    text-decoration: underline;
+}
+
+@media (max-width: 650px) {
+
+    .nav-bar {
+        grid-template-columns: 15% auto 10%;
+    }
+
+}
+
+.Mcontainer {
+    display: grid;
+    grid-template-rows: 10% auto;
+    grid-column-gap: 10px;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 5;
+    padding: 0.8rem 1.8rem 0.8rem 1.8rem;
+}
+
+.backgroundimg {
+    margin: 0%;
+    position: absolute;
+    left: -10%;
+    width: 40rem;
+    bottom:2%;
+    opacity: 0.25;
+    z-index: -1;
+}
+
+.background {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    background-color: #f2f2f2;
+}
+
+.back {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-self: start;
+    align-self: center;
+    cursor: pointer;
+    margin-top: 10%;
+    width: 10%;
+}
+
+.Menu {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: start;
+    margin-left: 5%;
+    align-self: start;
+    display: grid;
+    text-align: left;
+    line-height: 1;
+    margin-top: 20%;
+}
+
+a.Mnavbar-item {
+    font-size: 10vw;
+    margin-top: 1.3rem;
+    color: #3f3d56 !important;
+    cursor: pointer;
+}
+
+.Mis-activated {
+    color: #3acfd5 !important;
+}
+
+a.Mnavbar-item:hover {
+    color: #3acfd5 !important;
+}
