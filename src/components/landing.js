@@ -1,9 +1,9 @@
 import React from "react";
-import { useState, useEffect } from 'react';
 import "./landing.css";
 import backgroundImg from "../images/logo/WTM-Main.svg";
 import SM from "../components/socialmedia";
 import SMHolder from "../images/shapes/social-media-holder.svg";
+import blueWTM from "../images/logo/WTM-blue-shape.svg";
 
 
 const landing = () => {
@@ -36,6 +36,9 @@ const landing = () => {
                         <img src={backgroundImg} alt={"WTM Logo"} />
                     </div>
                 </div>
+            </div>
+            <div className="blueWTM">
+                <img src={blueWTM} alt="WTM logo White Version" />
             </div>
         </div>
     );

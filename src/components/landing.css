@@ -2,6 +2,7 @@
     transform: skew(0deg, -5deg);
     background: #f2f2f2;
     padding-bottom: 5vw;
+    margin-bottom: 15%;
 }
 
 .landing {
@@ -83,7 +84,20 @@
     margin-left: 15%;
 }
 
+.blueWTM {
+    width: 25%;
+    transform: skew(0deg, 5deg);
+    position: absolute;
+    bottom: -31%;
+    left: -1.5%;
+}
+
 @media (max-width: 650px) {
+
+    .skewed-bg {
+        margin-bottom: 20%;
+    }
+
     .main-landing img {
         right: 5%;
         bottom: -5rem;
@@ -126,5 +140,10 @@
     .bar {
         height: 10%;
         border-right: 1.3vw solid #5491f5;
+    }
+
+    .blueWTM {
+        width: 35%;
+        bottom: -15%;
     }
 }
