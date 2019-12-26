@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;  
-  width: 100vw;
+.footer-container {
+  position: relative;
+  left: 0px;
+  width: 100%;
   height: 40vw; 
 
   background-color: transparent;
-  /* background-color: pink; */
   background-image: url(../images/footer.svg);
   background-size: 100%;
   background-position: top left;
@@ -56,4 +54,24 @@
 .social {
   order: 3;
   min-width: 110%;
+  background-color: white;
+}
+
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 400px) {
+  .footer-box {  
+    bottom: 7%;
+  }
+  
+  
+  .copyrights {
+    margin-top: -14%;
+  }
+  
+  .social .Social-Media-Button {
+    width: 0.7rem;
+    margin-top: -1%;
+    margin-bottom: 4%;
+  } 
 }

@@ -7,7 +7,7 @@ import wtmlogo from "../images/logo/WTM\ logo.svg"
 import './footer.css'
 
 const Footer = () => (
-  <footer class="footer">
+  <footer class="footer-container">
       <div class="footer-box">  
         
         <div class="logo">
