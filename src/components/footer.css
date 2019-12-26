@@ -1,6 +1,5 @@
 .footer-container {
-  position: absolute;
-  bottom: 0;
+  position: relative;
 }
 
 .footer-box {
