@@ -10,8 +10,11 @@ const IndexPage = () => (
   <Layout>
     <SEO description="Women TechMakers Algiers / WTM Algiers Official Website" title="WTM Algiers Website Main Home" />
     <h1>Our Events</h1>
+    <div style={{width : "100%" , height:"30em" ,margin:"auto"}}>
     <EventSlideShow></EventSlideShow>
    
+    </div>
+    
   </Layout>
 )
 

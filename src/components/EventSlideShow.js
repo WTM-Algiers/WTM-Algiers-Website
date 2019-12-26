@@ -33,7 +33,7 @@ const EventSlideShow = ()=> {
     const events = eventData.map(event => {
         return <EventSlide image={event.image} title={event.title} description={event.description}></EventSlide>
     })
-      return <div style={{display :'block !important'}}>
+      return <div style={{height:'100%',marginBottom :'5%'}}>
           <Slider
       classNames ={{
           slider :'slider',
