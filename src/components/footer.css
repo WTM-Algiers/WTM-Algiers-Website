@@ -1,5 +1,6 @@
 .footer-container {
   position: relative;
+  background-color: #f2f2f2;
 }
 
 .footer-box {
@@ -8,12 +9,13 @@
   bottom: 0%;
 }
 
-.logo {
+.logo-f {
   width: 30%;
   margin: auto;
+  margin-bottom: 0.5vw;
 }
 
-.logo img {
+.logo-f img {
   margin-bottom: 0.5vw;
 }
 
@@ -25,6 +27,7 @@
 .copyrights {
   color: #3f3d56;
   font-size: 2.2vw;
+  margin-bottom: 0.5vw;
 }
 
 .social img {
@@ -49,7 +52,7 @@
     font-size: 3.2vw;
   }
 
-  .logo {
+  .logo-f {
     width: 40%;
   }
 

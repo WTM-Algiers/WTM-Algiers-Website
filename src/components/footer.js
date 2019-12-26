@@ -13,7 +13,7 @@ const Footer = () => (
     </div>
     <div class="footer-box">
 
-      <div class="logo">
+      <div class="logo-f">
         <img src={wtmlogo} alt="WomenTechmakers Algiers logo" />
       </div>
 
