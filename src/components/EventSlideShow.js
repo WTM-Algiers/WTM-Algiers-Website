@@ -33,7 +33,8 @@ const EventSlideShow = ()=> {
     const events = eventData.map(event => {
         return <EventSlide image={event.image} title={event.title} description={event.description}></EventSlide>
     })
-      return <Slider
+      return <div style={{display :'block !important'}}>
+          <Slider
       classNames ={{
           slider :'slider',
           track :'track',
@@ -46,6 +47,7 @@ const EventSlideShow = ()=> {
             {slide}
         </div>)}
       </Slider>
+          </div>
 }
 
 const SlideButton = ({onSlide,icon,tooltip})=>{

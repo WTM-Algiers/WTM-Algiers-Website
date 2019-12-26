@@ -9,6 +9,7 @@ import EventSlideShow from '../components/EventSlideShow'
 const IndexPage = () => (
   <Layout>
     <SEO description="Women TechMakers Algiers / WTM Algiers Official Website" title="WTM Algiers Website Main Home" />
+    <h1>Our Events</h1>
     <EventSlideShow></EventSlideShow>
    
   </Layout>

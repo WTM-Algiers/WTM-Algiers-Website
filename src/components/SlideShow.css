@@ -1,10 +1,11 @@
 .slider{
-    display: block;
     width: 100%;
     margin: auto;
     height: 500px;
 }
-
+.track {
+    margin: auto;
+}
 .slideButton {
     
     margin :auto;
@@ -18,11 +19,22 @@
 
 @media screen and (max-width: 60em) {
  .slider {
-     min-height: 900px;
-     min-width: 400px;
+
+     min-height: 500px;
+     min-width: 200px;
  }
  .slide{
+     margin-top: auto;
      width: 100%;
      margin-left: 0;
  }
+ .slider a.nextButton {
+    right: 0px;
+    font-size: 16px;
+    
+}
+.slider a.previousButton{
+    left: 0px;
+    font-size: 16px;
+}
 }

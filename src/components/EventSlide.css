@@ -35,9 +35,18 @@
 @media screen and (max-width: 60em) {
     .eventSlide{
         flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
     }
+    
     .eventContent {
         margin-bottom: 0;
+    }
+    .eventContent p {
+        font-size: 18px;
+    }
+    .eventContent h1 {
+        font-size: 50px;
     }
     .eventImage {
         margin-top: 0;

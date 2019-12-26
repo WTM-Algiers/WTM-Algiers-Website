@@ -1,1 +1,7 @@
 
+@media screen and (max-width : 60rem) {
+    .image-frame {
+        width: 90%;
+        height: 90%;
+    }
+}
