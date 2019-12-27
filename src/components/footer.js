@@ -7,21 +7,21 @@ import footerImg from "../images/footer.svg"
 import './footer.css'
 
 const Footer = () => (
-  <footer class="footer-container">
-    <div class="footer-svg">
+  <footer className="footer-container">
+    <div className="footer-svg">
       <img src={footerImg} alt="footer svg" />
     </div>
-    <div class="footer-box">
+    <div className="footer-box">
 
-      <div class="logo-f">
+      <div className="logo-f">
         <img src={wtmlogo} alt="WomenTechmakers Algiers logo" />
       </div>
 
-      <div class="copyrights">
+      <div className="copyrights">
         &copy; 2019 WTM Algiers All Rights Reserved.
         </div>
 
-      <div class="social">
+      <div className="social">
         <SM></SM>
       </div>
     </div>
