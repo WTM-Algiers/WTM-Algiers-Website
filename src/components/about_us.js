@@ -6,9 +6,7 @@ import Meetups from "../images/meetups.svg";
 const AboutUs = () => {
   return (
     <div className="flex-container">
-      <div className="title">
-        About Us <img src={Workshops} />
-      </div>
+      <div className="title">About Us</div>
       <div className="paragraphe">
         <p>
           Shaping the future of technology that will create the outlook we all
