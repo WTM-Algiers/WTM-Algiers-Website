@@ -38,10 +38,7 @@ const Layout = ({ children }) => {
         style={{
           margin: `0 auto`,
           paddingTop: 0,
-          display: "inline-block",
-          textAlign: "center",
-          width: "100%"
-
+          display:"contents"
         }}
       >
         <main>{children}</main>
