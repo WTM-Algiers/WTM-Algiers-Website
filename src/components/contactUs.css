@@ -1,0 +1,49 @@
+input[type='text'],
+textarea,
+input[type='email'] {
+  width: 100%;
+  padding-left: 2%;
+  border: none;
+  background-color: #ffffff;
+  border-radius: 10px;
+  resize: none;
+  color: #3f3d56;
+}
+input[type='text'],
+input[type='email'] {
+  height: 82%;
+}
+
+.submitButton {
+  width: 25%;
+  height: 82%;
+  border: 0px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  float: right;
+  text-align: center;
+  color: #3f3d56;
+}
+.textarea {
+  height: 94%;
+}
+.contact-form {
+  font-family: 'Product', sans-serif;
+  width: 44vw;
+  font-size: 2vw;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  margin: 0 auto;
+}
+.input-row {
+  height: 7vh;
+}
+.button-row {
+  height: 7vh;
+}
+.textarea-row {
+  height: 20vh;
+}
