@@ -15,6 +15,26 @@
     width: 70%;
     margin-top: 5%;   
     margin-left: 15%;
+   
+}
+
+.slide.animateIn ,.slide.animateOut{
+    transition: all 1s ease;
+}
+.slide.previous {
+    left: -81%;
+}
+.slide.next {
+    left: 81%;
+}
+
+.slide.animateOut.next {
+    left: -81%;
+}
+
+.slide.animateOut.previous {
+    left: 81%;
+
 }
 
 @media screen and (max-width: 60em) {
@@ -38,4 +58,23 @@
     left: 0px;
     font-size: 16px;
 }
+.slide.animateIn ,.slide.animateOut{
+    transition: all 1s ease;
+}
+.slide.previous {
+    left: -100%;
+}
+.slide.next {
+    left: 100%;
+}
+
+.slide.animateOut.next {
+    left: -100%;
+}
+
+.slide.animateOut.previous {
+    left: 100%;
+
+}
+
 }
