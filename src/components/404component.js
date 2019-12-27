@@ -1,6 +1,7 @@
 import React from "react";
 import Wtm_main from "../images/logo/WTM-Main.svg";
 import image404 from "../images/404.svg";
+import "./404component.css";
 import { Link } from "gatsby";
 
 const NotFound404 = () => {
