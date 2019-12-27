@@ -1,6 +1,6 @@
 .text-message {
   margin-top: 5%;
-  font-size: 3vw;
+  font-size: 2.5vw;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -30,7 +30,8 @@
 
 .back {
   position: fixed;
-  width: 80%;
+  min-width: 80%;
+  top: -15%;
   left: 10%;
   transform: translate(34%, -15%);
   opacity: 0.2;
