@@ -8,7 +8,7 @@ const contactUs = () => (
       netlify-honeypot='bot-field'
       data-netlify='true'
     >
-      <input type='hidden' name='form-name' value='contact' />
+      <input type='hidden' name='bot-field' />
       <div className={'input-row'}>
         <input name='name' placeholder='Full Name' type='text' id='name' />
       </div>
