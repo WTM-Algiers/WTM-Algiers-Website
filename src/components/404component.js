@@ -6,13 +6,14 @@ import { Link } from "gatsby";
 
 const NotFound404 = () => {
   return (
-    <div class="container">
-      <img
-        src={Wtm_main}
-        alt="Wtm logo"
-        className="back"
-        style={{ minidth: `400px`, marginBottom: `0.5rem` }}
-      />
+    <div className="container">
+      <div>
+        <img
+          src={Wtm_main}
+          alt="Wtm logo"
+          className="back"
+        />
+      </div>
       <div className="center">
         <img src={image404} />
         <div className="text-message">
