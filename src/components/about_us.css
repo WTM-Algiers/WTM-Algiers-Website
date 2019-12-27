@@ -1,0 +1,55 @@
+.flex-container {
+  flex: display;
+  flex-direction: column;
+}
+.title {
+  margin-bottom: 3%;
+  text-align: center;
+  font-family: ProductSans;
+  font-size: 3rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.21;
+  letter-spacing: normal;
+  color: #3f3d56;
+}
+.title > span {
+  color: #03bfa6;
+}
+.paragraphe {
+  padding-left: 7%;
+  padding-right: 7%;
+  text-align: center;
+  font-family: ProductSans;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  color: #3f3d56;
+}
+.photos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.photos > div {
+  width: 13rem;
+  text-align: center;
+  line-height: 75px;
+  font-size: 2.2rem;
+}
+.photos > div > img {
+  margin-bottom: 0px;
+}
+.photos > div > div {
+  margin-bottom: 20%;
+}
+.photo1 {
+  width: 12.3rem; /* because this photo is bigger than the 2 others*/
+}

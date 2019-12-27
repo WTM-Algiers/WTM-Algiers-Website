@@ -2,11 +2,13 @@ import React from "react";
 import Workshops from "../images/workshops.svg";
 import Conference from "../images/conf.svg";
 import Meetups from "../images/meetups.svg";
-
+import "./about_us.css";
 const AboutUs = () => {
   return (
     <div className="flex-container">
-      <div className="title">About Us</div>
+      <p className="title">
+        About <span>US</span>{" "}
+      </p>
       <div className="paragraphe">
         <p>
           Shaping the future of technology that will create the outlook we all
@@ -27,19 +29,15 @@ const AboutUs = () => {
       <div className="photos">
         <div>
           {" "}
-          Workshops{" "}
-          <img
-            src={Workshops}
-            style={{ minidth: `400px`, marginBottom: `0.5rem` }}
-          />{" "}
+          <img src={Workshops} className="photo1" /> <div>Workshops </div>
         </div>
         <div>
           {" "}
-          Conferences <img src={Conference} />{" "}
+          <img src={Conference} /> <div> Conferences</div>
         </div>
         <div>
           {" "}
-          Meetups <img src={Meetups} />{" "}
+          <img src={Meetups} /> <div>Meetups</div>
         </div>
       </div>
     </div>
