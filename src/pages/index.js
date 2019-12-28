@@ -35,8 +35,11 @@ const IndexPage = () => (
     <p>We are still working on it cuerrently, See you Soon ;)</p>
 
     <SM direction="" />
+    <div style={{backgroundColor:"#f2f2f2"}}>
+    <Contact />
+    </div >
 
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;

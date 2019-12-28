@@ -1,0 +1,90 @@
+input[type="text"],
+textarea,
+input[type="email"] {
+  width: 100%;
+  padding-left: 2vw;
+  border: none;
+  background-color: #ffffff;
+  resize: none;
+  color: #3f3d56;
+  border-radius: 0.5vw;
+}
+
+input[type="text"],
+input[type="email"] {
+  height: 4vw;
+}
+
+.submitButton {
+  width: 15vw;
+  height: 4vw;
+  border: none;
+  background-color: #ffffff;
+  float: right;
+  text-align: center;
+  color: #3f3d56;
+  cursor: pointer;
+  border-radius: 0.5vw;
+}
+
+.textarea {
+  height: 20vw;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+.contact-form {
+  width: 60vw;
+  height: 40vw;
+  font-size: 2vw;
+  line-height: 1.22;
+  margin: 0 auto;
+  padding: 2vw;
+}
+
+.input-row,
+.textarea-row,
+.button-row {
+  margin-bottom: 1vw;
+}
+
+@media (max-width: 650px) {
+
+  input[type="text"],
+  input[type="email"] {
+    height: 5vw;
+  }
+
+  input[type="text"],
+  textarea,
+  input[type="email"] {
+    border-radius: 1vw;
+  }
+
+  .textarea {
+    height: 35vw;
+  }
+
+  .contact-form {
+    width: 90vw;
+    height: 60vw;
+    font-size: 3vw;
+  }
+
+  .submitButton {
+    width: 20vw;
+    height: 5vw;
+    border-radius: 1vw;
+  }
+
+  .input-row,
+  .textarea-row,
+  .button-row {
+    margin-bottom: 2vw;
+  }
+
+}
