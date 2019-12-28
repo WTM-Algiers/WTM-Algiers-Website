@@ -8,10 +8,10 @@ import menubutton from "../images/Icons/menu.svg";
 import backbutton from "../images/Icons/back.svg";
 import backgroundImg from "../images/logo/WTM-Main.svg";
 
-
+const Wwidth = window.innerWidth;
 
 const useWindowWidth = () => {
-    const [windowWidth, setWindowWidth] = useState(null);
+    const [windowWidth, setWindowWidth] = useState(Wwidth);
 
     const handleWindowResize = () => {
         setWindowWidth(window.innerWidth);
@@ -55,7 +55,7 @@ const NavBar = ({ menuelements }) => {
         setshowMMenu(false);
     }
 
-    const imageUrl = useWindowWidth() >= 650 ? logo : logoM;
+    const imageUrl = useWindowWidth() >= 450 ? logo : logoM;
 
     const sections = menuelements.map((item, i) => {
         console.log("section" + i)
@@ -123,7 +123,7 @@ const NavBar = ({ menuelements }) => {
             <div className="logo">
                 {!visible?<img src={imageUrl} alt="Women TechMakers Algiers" />:null}
             </div>
-            {useWindowWidth() >= 650 ? links : menuButton}
+            {useWindowWidth() >= 450 ? links : menuButton}
         </div>
     )
 
