@@ -1,10 +1,12 @@
 .eventSection {
     overflow: hidden;
-    
+    text-align: center;
 }
-.title {
+.eventSection.title-section {
     color: hsl(245, 17%, 29%);
     font-size: 3rem;
+    width: 100%;
+    text-align: center;
 }
 #our {
     color : #5390f5
@@ -21,7 +23,7 @@
     transform: rotate(-70deg);
 }
 .slideshow {
-    z-index: 10;
+    z-index: 1;
     position: relative;
     height: 100%;
 }
@@ -52,4 +54,8 @@
     top :-34rem;
     left: -37%;
    }
+   .eventSection.title-section {
+       text-align: center;
+        width: 100%;
+    }
 }

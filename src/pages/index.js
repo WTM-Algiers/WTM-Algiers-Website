@@ -7,17 +7,13 @@ import SM from "../components/socialmedia";
 import LP from "../components/landing";
 import EventSlide from '../components/EventSlide'
 import EventSlideShow from '../components/EventSlideShow'
+import EventSection from '../components/EventSection'
 const IndexPage = () => (
   <Layout>
     <SEO description="Women TechMakers Algiers / WTM Algiers Official Website" title="WTM Algiers Website Main Home" />
 
     <LP/>
-  
-   <h1>Our Events</h1>
-    <div style={{width : "100%" , height:"30em" ,margin:"auto"}}>
-    <EventSlideShow></EventSlideShow>
-   
-    </div>
+    <EventSection></EventSection>
 
     <div style={{ maxWidth: `400px`, marginBottom: `0.5rem`, display:"block", margin:"auto" }}>
       <img src={logo} alt={"WTM Logo"}/>

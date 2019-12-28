@@ -6,7 +6,7 @@ import blueShape from '../images/shapes/blue-shape-1.svg'
 import './EventSection.css'
 const EventSection =() => {
     return <section className="eventSection">
-        <h1 className="title"><span id ="our">OUR</span> EVENTS</h1>
+        <h1 className="title-section"><span id ="our">OUR</span> EVENTS</h1>
         <div style={{width : "100%" , height:"30em" ,margin:"auto"}}>
         <div className="slideshow">
            <EventSlideShow></EventSlideShow>
