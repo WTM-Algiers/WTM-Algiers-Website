@@ -8,10 +8,11 @@ import menubutton from "../images/Icons/menu.svg";
 import backbutton from "../images/Icons/back.svg";
 import backgroundImg from "../images/logo/WTM-Main.svg";
 
-const Wwidth = window.innerWidth;
+
+const Wwidth = typeof window !== 'undefined' && window
 
 const useWindowWidth = () => {
-    const [windowWidth, setWindowWidth] = useState(Wwidth);
+    const [windowWidth, setWindowWidth] = useState(Wwidth.innerWidth);
 
     const handleWindowResize = () => {
         setWindowWidth(window.innerWidth);
