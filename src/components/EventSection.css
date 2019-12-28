@@ -1,7 +1,55 @@
+.eventSection {
+    overflow: hidden;
+    
+}
 .title {
     color: hsl(245, 17%, 29%);
     font-size: 3rem;
 }
 #our {
     color : #5390f5
+}
+.green-svg, .blue-svg {
+    opacity: 0.32;
+}
+.green-svg {
+    height: 16rem;
+    width:20rem;
+    position: relative;
+    top: -33rem;
+    left: -10rem;
+    transform: rotate(-70deg);
+}
+.slideshow {
+    z-index: 10;
+    position: relative;
+    height: 100%;
+}
+.blue-svg{
+    height: 18rem;
+    width:20rem;
+    position: relative;
+    top :-16rem;
+    left: 9rem;
+    transform: rotate(120deg);
+}
+@media screen and (max-width : 50em) {
+   .eventSection {
+       padding-bottom: 10%;
+   }
+    .blue-svg {
+    
+    height: 12rem;
+    width:16rem;
+    position: relative;
+    top :-20rem;
+    left: 40%;
+   }
+   .green-svg {
+    height: 11rem;
+    width:10rem;
+    position: relative;
+    top :-34rem;
+    left: -37%;
+   }
 }

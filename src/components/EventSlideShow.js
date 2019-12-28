@@ -37,7 +37,7 @@ const EventSlideShow = ()=> {
     const [loading,setLoading] = useState(true);
     /// Loading data
     const [data,setData] = useState([]);
-    //const [events,setEvents] = useState([]);
+    
     useEffect(()=>{
         // load events data from markdown instead of eventData object 
         setTimeout(()=> {
