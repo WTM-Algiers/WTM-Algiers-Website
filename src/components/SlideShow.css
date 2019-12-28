@@ -1,30 +1,36 @@
-.slider{
+.slider {
     width: 100%;
     margin: auto;
     height: 100%;
 }
+
 .track {
     margin: auto;
 }
+
 .slideButton {
-    
-    margin :auto;
+
+    margin: auto;
     opacity: 0.5;
 }
-.slide{
+
+.slide {
     width: 70%;
     margin-top: 5em;   
     margin-left: 15%;
-   
+
 }
 
-.slide.animateIn ,.slide.animateOut{
+.slide.animateIn,
+.slide.animateOut {
     transition: all 1s ease;
 }
+
 .slide.previous {
     left: -81%;
 
 }
+
 .slide.next {
     left: 81%;
   
@@ -43,51 +49,44 @@
     top: 7em;
 }
 
-@media screen and (max-width: 50em) {
- .slider {
 
-     min-height: 100%;
-     height: 100%;
-     min-width: 200px;
-     
- }
- .loading {
-     position: relative;
-     top: 12em;
- }
- .slide{
-     margin-top: auto;
-     width: 100%;
-     margin-left: 0;
- }
- .slider a.nextButton {
-    right: -0.5em;
-    font-size: 16px;
-    opacity: 0.3;
-    
-}
-.slider a.previousButton{
-    left: -0.5em;
-    font-size: 16px;
-    opacity: 0.3;
-}
-.slide.animateIn ,.slide.animateOut{
-    transition: all 1s ease;
-}
-.slide.previous {
-    left: -100%;
-}
-.slide.next {
-    left: 100%;
-}
+@media screen and (max-width: 60em) {
+    .slider {
 
-.slide.animateOut.next {
-    left: -100%;
-}
+        min-height: 100%;
+        height: 100%;
+        min-width: 200px;
+    }
 
-.slide.animateOut.previous {
-    left: 100%;
+    .slide {
+        margin-top: auto;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 
-}
+    .slider a.nextButton {
+        right: 0px;
+        font-size: 16px;
+
+    }
+
+    .slider a.previousButton {
+        left: 0px;
+        font-size: 16px;
+    }
+
+    .slide.animateIn,
+    .slide.animateOut {
+        transition: all 1s ease;
+    }
+
+    .slide.previous, .slide.animateOut.next {
+        left: -85%;
+    }
+
+    .slide.next, .slide.animateOut.previous  {
+        left: 85%;
+    }
 
 }

@@ -1,15 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="862.964" height="901.3" viewBox="0 0 862.964 901.3">
-  <g id="Group_470" data-name="Group 470" transform="translate(-261.718 -165.426)">
-    <g id="Group_129" data-name="Group 129" transform="translate(941.308 596.312) rotate(117)" opacity="0.32">
-      <path id="Path_906" data-name="Path 906" d="M186.014,203.43,476.022,55.664s116.858,44.945,0,0c-74.874-28.8-156.515-48.047-235.468-53.8a671.325,671.325,0,0,0-99.524-.033C-200.69,27.763,186.014,203.43,186.014,203.43Z" transform="translate(0 0)" fill="#5390f5"/>
-    </g>
-    <g id="Group_342" data-name="Group 342" transform="translate(261.718 165.426)">
-      <g id="Group_130" data-name="Group 130" transform="matrix(-0.883, -0.469, 0.469, -0.883, 473.084, 898.557)" opacity="0.32">
-        <path id="Path_906-2" data-name="Path 906" d="M108.992,79.475C30.654,236.982-8.253,418.8,1.466,546.642,12.512,691.848,73.722,762.994,177.172,793.3c7.5,2.2.125.234.125.234L420.041,664.463,108.992,79.475Z" transform="translate(0 0)" fill="#03bfa6"/>
-      </g>
-      <g id="Group_128" data-name="Group 128" transform="translate(862.964 349.391) rotate(135)">
-        <path id="Path_906-3" data-name="Path 906" d="M615.926,18.49C546.191,2.889,474.271-3.458,404.558,1.833,229.6,15.11,89.423,161.35,0,331.875H0L151.723,481.894l464.2-463.4Z" transform="translate(0 0)" fill="#fff"/>
-      </g>
-    </g>
+<svg width="147" height="305" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="307" width="149" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
   </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g stroke="null" id="svg_20">
+   <g stroke="null" transform="matrix(0.42122700445999384,0,0,0.42122700445999384,-5300.815153155381,-3659.975653382837) " id="svg_11">
+    <g stroke="null" opacity="0.32" transform="rotate(117 12845.964843749998,9005.0498046875) " id="svg_17">
+     <path stroke="null" fill="#5390f5" d="m13031.978711,9208.480393l290.008,-147.766s116.858,44.945 0,0c-74.874,-28.8 -156.515,-48.047 -235.468,-53.8a671.325,671.325 0 0 0 -99.524,-0.033c-341.72,25.932 44.984,201.599 44.984,201.599z" id="svg_18"/>
+    </g>
+    <g stroke="null" id="svg_12">
+     <g stroke="null" opacity="0.32" transform="matrix(-0.883,-0.469,0.469,-0.883,473.084,898.557) " id="svg_15">
+      <path stroke="null" fill="#03bfa6" d="m-14660.368978,-1786.135567c-78.338,157.507 -117.245,339.325 -107.526,467.167c11.046,145.206 72.256,216.352 175.706,246.658c7.5,2.2 0.125,0.234 0.125,0.234l242.744,-129.071l-311.049,-584.988z" id="svg_16"/>
+     </g>
+     <g stroke="null" transform="rotate(135 13029.3388671875,8923.5546875) " id="svg_13">
+      <path stroke="null" fill="#fff" d="m13645.264704,8942.045367c-69.735,-15.601 -141.655,-21.948 -211.368,-16.657c-174.958,13.277 -315.135,159.517 -404.558,330.042l0,0l151.723,150.019l464.2,-463.4l0.003,-0.004z" id="svg_14"/>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
 </svg>
