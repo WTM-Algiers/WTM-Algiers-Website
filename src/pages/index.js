@@ -5,6 +5,7 @@ import SEO from "../components/seo";
 import logo from "../images/logo/WTM-Main.svg";
 import SM from "../components/socialmedia";
 import LP from "../components/landing";
+import Contact from "../components/contactUs"
 
 const IndexPage = () => (
   <Layout>
@@ -30,6 +31,10 @@ const IndexPage = () => (
     <p>We are still working on it cuerrently, See you Soon ;)</p>
 
     <SM direction="" />
+    <div style={{backgroundColor:"#f2f2f2"}}>
+    <Contact />
+    </div >
+
   </Layout>
 );
 
