@@ -8,6 +8,7 @@ import LP from "../components/landing";
 import EventSlide from '../components/EventSlide'
 import EventSlideShow from '../components/EventSlideShow'
 import About from "../components/about_us"
+import Contact from "../components/contactUs"
 
 const IndexPage = () => (
   <Layout>
@@ -35,8 +36,8 @@ const IndexPage = () => (
     <p>We are still working on it cuerrently, See you Soon ;)</p>
 
     <SM direction="" />
-    <div style={{backgroundColor:"#f2f2f2"}}>
-    <Contact />
+    <div style={{ backgroundColor: "#f2f2f2" }}>
+      <Contact />
     </div >
 
   </Layout>
