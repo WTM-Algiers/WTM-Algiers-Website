@@ -5,14 +5,14 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-import NB from "../components/navbar"
+import React from "react";
+import PropTypes from "prop-types";
+import { useStaticQuery, graphql } from "gatsby";
+import NB from "../components/navbar";
 
-import Header from "./header"
-import Footer from "./footer"
-import "./layout.css"
+import Header from "./header";
+import Footer from "./footer";
+import "./layout.css";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -23,15 +23,16 @@ const Layout = ({ children }) => {
         }
       }
     }
-  `)
+  `);
 
   return (
-    <div style={{
-      background: "white",
-      minHeight: "100vh",
-      textAlign: "center"
-    }}>
-
+    <div
+      style={{
+        background: "white",
+        minHeight: "100vh",
+        textAlign: "center"
+      }}
+    >
       <NB menuelements={["HOME", "ABOUT", "EVENTS", "PARTNERS", "CONTACT"]} />
 
       <div
@@ -41,18 +42,17 @@ const Layout = ({ children }) => {
           display: "inline-block",
           textAlign: "center",
           width: "100%"
-
         }}
       >
         <main>{children}</main>
       </div>
-      <Footer/>
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
+  children: PropTypes.node.isRequired
+};
 
-export default Layout
+export default Layout;
