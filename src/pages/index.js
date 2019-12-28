@@ -7,11 +7,16 @@ import SM from "../components/socialmedia";
 import LP from "../components/landing";
 import EventSlide from '../components/EventSlide'
 import EventSlideShow from '../components/EventSlideShow'
+import About from "../components/about_us"
+
 const IndexPage = () => (
   <Layout>
     <SEO description="Women TechMakers Algiers / WTM Algiers Official Website" title="WTM Algiers Website Main Home" />
 
     <LP/>
+    
+    <About/>
+
   
    <h1>Our Events</h1>
     <div style={{width : "100%" , height:"30em" ,margin:"auto"}}>
@@ -27,7 +32,7 @@ const IndexPage = () => (
     <p>We are still working on it cuerrently, See you Soon ;)</p>
 
     <SM direction="" />
-      
+
   </Layout>
 )
 
