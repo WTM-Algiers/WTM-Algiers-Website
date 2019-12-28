@@ -28,7 +28,7 @@
   transform: translate(-50%, 7%);
 }
 
-.back {
+.error-back {
   position: fixed;
   min-width: 80%;
   top: -15%;
@@ -43,7 +43,7 @@ body {
 }
 
 @media only screen and (max-width: 1024px) {
-  .back {
+  .error-back {
     left: 50%;
     top: 5rem;
     transform: translate(-40%, -10%);

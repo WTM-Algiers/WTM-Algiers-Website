@@ -13,19 +13,22 @@ const IndexPage = () => (
   <Layout>
     <SEO description="Women TechMakers Algiers / WTM Algiers Official Website" title="WTM Algiers Website Main Home" />
 
-    <LP/>
-    
-    <About/>
-
-  
-   <h1>Our Events</h1>
-    <div style={{width : "100%" , height:"30em" ,margin:"auto"}}>
-    <EventSlideShow></EventSlideShow>
-   
+    <div id="section0">
+      <LP />
     </div>
 
-    <div style={{ maxWidth: `400px`, marginBottom: `0.5rem`, display:"block", margin:"auto" }}>
-      <img src={logo} alt={"WTM Logo"}/>
+    <div id="section1">
+      <About />
+    </div>
+
+    <h1>Our Events</h1>
+    <div style={{ width: "100%", height: "30em", margin: "auto" }}>
+      <EventSlideShow></EventSlideShow>
+
+    </div>
+
+    <div style={{ maxWidth: `400px`, marginBottom: `0.5rem`, display: "block", margin: "auto" }}>
+      <img src={logo} alt={"WTM Logo"} />
     </div>
 
     <p>Welcome to WTM Algiers Official Website.</p>

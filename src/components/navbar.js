@@ -58,6 +58,7 @@ const NavBar = ({ menuelements }) => {
     const imageUrl = useWindowWidth() >= 650 ? logo : logoM;
 
     const sections = menuelements.map((item, i) => {
+        console.log("section" + i)
         return <Link
             key={i}
             className="navbar-item"
@@ -65,7 +66,7 @@ const NavBar = ({ menuelements }) => {
             to={"section" + i}
             spy={true}
             smooth={true}
-            offset={35}
+            offset={i==0?0:-70}
             duration={500}
         >
             {item}
@@ -80,8 +81,9 @@ const NavBar = ({ menuelements }) => {
             to={"section" + i}
             spy={true}
             smooth={true}
-            offset={35}
+            offset={i==0?0:-70}
             duration={500}
+            onClick={hideMenu}
         >
             {item}
         </Link>

@@ -11,7 +11,7 @@ const NotFound404 = () => {
         <img
           src={Wtm_main}
           alt="Wtm logo"
-          className="back"
+          className="error-back"
         />
       </div>
       <div className="center">
