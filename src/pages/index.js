@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import logo from "../images/logo/WTM-Main.svg"
 import SM from "../components/socialmedia"
+import About from "../components/about_us"
 
 const IndexPage = () => (
   <Layout>
@@ -15,6 +16,8 @@ const IndexPage = () => (
     <p>We are still working on it cuerrently, See you Soon ;)</p>
 
     <SM direction="" />
+
+    <About/>
 
   </Layout>
 )

@@ -13,10 +13,10 @@ const AboutUs = () => {
         <p>
           Shaping the future of technology that will create the outlook we all
           want to live in by increasing visibility, community, and resources for
-          women in the field. In view of this, Google’s Women TechMackers
+          women in the field. In view of this, Google’s <b>Women TechMackers </b>
           program has been created in 2012, in order to spread learning and
           build role models globally, since, more than 200 communities have been
-          launched locally. WTM Algiers is one of these communities, it aims to
+          launched locally. <b>WTM Algiers </b>is one of these communities, it aims to
           inspire and enable more women to join the tech industry. Our
           community, located at the National Higher School of Computer science,
           Algiers, Algeria, isn’t just driven by developers but anyone who is
@@ -29,15 +29,15 @@ const AboutUs = () => {
       <div className="photos">
         <div>
           {" "}
-          <img src={Workshops} className="photo1" /> <div>Workshops </div>
+          <img src={Workshops} className="photo1" /> <div className="imgTitle">Workshops </div>
         </div>
         <div>
           {" "}
-          <img src={Conference} /> <div> Conferences</div>
+          <img src={Conference} /> <div className="imgTitle"> Conferences</div>
         </div>
         <div>
           {" "}
-          <img src={Meetups} /> <div>Meetups</div>
+          <img src={Meetups} /> <div className="imgTitle">Meetups</div>
         </div>
       </div>
     </div>

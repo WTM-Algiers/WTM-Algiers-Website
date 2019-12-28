@@ -2,34 +2,29 @@
   flex: display;
   flex-direction: column;
 }
+
 .title {
   margin-bottom: 3%;
   text-align: center;
-  font-family: ProductSans;
   font-size: 3rem;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.21;
-  letter-spacing: normal;
   color: #3f3d56;
 }
+
 .title > span {
   color: #03bfa6;
 }
+
 .paragraphe {
   padding-left: 7%;
   padding-right: 7%;
   text-align: center;
-  font-family: ProductSans;
   font-size: 20px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.2;
-  letter-spacing: normal;
   color: #3f3d56;
 }
+
 .photos {
   display: flex;
   justify-content: space-around;
@@ -52,4 +47,9 @@
 }
 .photo1 {
   width: 12.3rem; /* because this photo is bigger than the 2 others*/
+}
+
+.imgTitle {
+  font-weight: bolder;
+  color: #3f3d56;
 }
