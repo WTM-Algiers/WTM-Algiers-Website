@@ -4,16 +4,12 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import logo from "../images/logo/WTM-Main.svg"
 import SM from "../components/socialmedia"
-import EventSlide from '../components/EventSlide'
-import EventSlideShow from '../components/EventSlideShow'
+
+import EventSection from '../components/EventSection'
 const IndexPage = () => (
   <Layout>
     <SEO description="Women TechMakers Algiers / WTM Algiers Official Website" title="WTM Algiers Website Main Home" />
-    <h1>Our Events</h1>
-    <div style={{width : "100%" , height:"30em" ,margin:"auto"}}>
-    <EventSlideShow></EventSlideShow>
-   
-    </div>
+    <EventSection></EventSection>
     
   </Layout>
 )

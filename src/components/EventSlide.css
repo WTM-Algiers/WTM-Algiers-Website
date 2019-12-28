@@ -13,15 +13,15 @@
     margin: 5%;
 }
 .eventImage{
-    margin-top: 10%;
+    margin-top: auto;
 }
 .eventContent h1{
-    font-size: 70px;
+    font-size: 3rem;
     text-align: left;
     color: #03bfa6;
 }
 .eventContent p {
-    font-size: 20px;
+    font-size: 1rem;
     max-width: 400px;
     font-weight: normal;
     font-stretch: normal;
@@ -31,7 +31,7 @@
     text-align: left;
     color: #3f3d56;
 }
-@media screen and (max-width: 60em) {
+@media screen and (max-width: 50em) {
     .eventSlide{
         flex-direction: column-reverse;
         align-items: center;
