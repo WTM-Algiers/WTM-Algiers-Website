@@ -12,7 +12,10 @@ import Contact from "../components/contactUs"
 
 const IndexPage = () => (
   <Layout>
-    <SEO description="Women TechMakers Algiers / WTM Algiers Official Website" title="WTM Algiers Website Main Home" />
+    <SEO
+      description="Women TechMakers Algiers / WTM Algiers Official Website"
+      title="WTM Algiers Website Main Home"
+    />
 
     <div id="section0">
       <LP />
@@ -25,10 +28,16 @@ const IndexPage = () => (
     <h1>Our Events</h1>
     <div style={{ width: "100%", height: "30em", margin: "auto" }}>
       <EventSlideShow></EventSlideShow>
-
     </div>
 
-    <div style={{ maxWidth: `400px`, marginBottom: `0.5rem`, display: "block", margin: "auto" }}>
+    <div
+      style={{
+        maxWidth: `400px`,
+        marginBottom: `0.5rem`,
+        display: "block",
+        margin: "auto"
+      }}
+    >
       <img src={logo} alt={"WTM Logo"} />
     </div>
 
@@ -38,8 +47,7 @@ const IndexPage = () => (
     <SM direction="" />
     <div style={{ backgroundColor: "#f2f2f2" }}>
       <Contact />
-    </div >
-
+    </div>
   </Layout>
 );
 
