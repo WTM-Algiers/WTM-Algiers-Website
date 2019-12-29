@@ -8,7 +8,7 @@ import LP from "../components/landing";
 import EventSlide from '../components/EventSlide'
 import EventSlideShow from '../components/EventSlideShow'
 import About from "../components/about_us"
-import Contact from "../components/contactUs"
+import Contact from "../components/contact_us"
 
 const IndexPage = () => (
   <Layout>
