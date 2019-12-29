@@ -51,6 +51,7 @@ const EventSlideShow = ()=> {
     })
       return <div style={{height:'100%',marginBottom :'5%'}}>
           <Slider
+          duration={500}
       classNames ={{
           slider :'slider',
           track :'track',

@@ -23,7 +23,7 @@
 
 .slide.animateIn,
 .slide.animateOut {
-    transition: all 1s ease;
+    transition: all 0.5s ease;
 }
 
 .slide.previous {
@@ -85,7 +85,7 @@
 
     .slide.animateIn,
     .slide.animateOut {
-        transition: all 1s ease;
+        transition: all 0.5s ease;
     }
 
     .slide.previous, .slide.animateOut.next {
