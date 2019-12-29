@@ -1,70 +1,93 @@
+.contact-section {
+  width: 100%;
+  overflow: hidden;
+}
+
 .section-title {
-  margin-bottom: 3%;
+  margin-bottom: 0%;
   text-align: center;
   font-size: 3rem;
   font-weight: bold;
   line-height: 1.21;
   color: #3f3d56;
 }
-.section-title > span {
+
+.section-title>span {
   color: #03bfa6;
 }
+
 .contactImg {
   position: relative;
-  top: 3vw;
+  top: 11vw;
   height: 26vw;
-  left: -20vw;
+  left: -49vw;
   z-index: 1;
 }
+
 .shapeleft {
   opacity: 0.32;
   position: relative;
-  top: -10vw;
-  left: -60vw;
+  top: 0%;
+  left: -35%;
   height: 26vw;
   z-index: 0;
 }
+
 .shaperight {
   opacity: 0.32;
   position: relative;
-  top: -45vw;
-  right: -40vw;
+  left: 46%;
+  top: -20vw;
   height: 30vw;
   z-index: 0;
 }
+
 .contactForm {
   z-index: 1;
   position: relative;
-  top: -25vw;
+  width: 75%;
+  right: -20%;
 }
+
+.SR {
+  height: 10vw;
+}
+
+.SL {
+  height: 15vw;
+}
+
 @media (max-width: 650px) {
   .contactImg {
-    position: relative;
     opacity: 0.32;
-    top: -8vw;
+    top: -5.5vw;
     height: 24vw;
-    left: -15vw;
-    z-index: 1;
+    left: -45vw;
   }
+
   .shapeleft {
-    opacity: 0.32;
-    position: relative;
-    top: 3vw;
-    left: -60vw;
-    height: 26vw;
-    z-index: 0;
+    top: 10vw;
+    left: -32vw;
   }
+
   .shaperight {
-    opacity: 0.32;
-    position: relative;
-    top: -45vw;
-    right: -40vw;
-    height: 30vw;
-    z-index: 0;
+    top: -36vw;
+    left: 43%;
   }
+
   .contactForm {
     z-index: 1;
     position: relative;
     top: -18vw;
+    width: 100%;
+    right: 0%;
+  }
+
+  .SR {
+    height: 0vw;
+  }
+
+  .SL {
+    height: 35vw;
   }
 }

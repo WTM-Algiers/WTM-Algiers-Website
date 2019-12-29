@@ -9,12 +9,21 @@ const conactUs = () => (
     <p className="section-title">
       CONTACT <span>US</span>
     </p>
-    <img src={contactImg} className={"contactImg"} alt="Contact svg"></img>
-    <img className={"shapeleft"} src={shapeleft}></img>
-    <div className={"contactForm"}>
-      <Contact></Contact>
+
+    <div className="contact-section">
+      <div className="SL">
+        <img className={"shapeleft"} src={shapeleft} />
+        <img src={contactImg} className={"contactImg"} alt="Contact svg" />
+      </div>
+      <div className={"contactForm"}>
+        <Contact />
+      </div>
+
+      <div className="SR">
+        <img className={"shaperight"} src={shaperight} />
+      </div>
     </div>
-    <img className={"shaperight"} src={shaperight}></img>
+
   </div>
 );
 
