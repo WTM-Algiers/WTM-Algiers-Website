@@ -1,0 +1,70 @@
+.section-title {
+  margin-bottom: 3%;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.21;
+  color: #3f3d56;
+}
+.section-title > span {
+  color: #03bfa6;
+}
+.contactImg {
+  position: relative;
+  top: 3vw;
+  height: 26vw;
+  left: -20vw;
+  z-index: 1;
+}
+.shapeleft {
+  opacity: 0.32;
+  position: relative;
+  top: -10vw;
+  left: -60vw;
+  height: 26vw;
+  z-index: 0;
+}
+.shaperight {
+  opacity: 0.32;
+  position: relative;
+  top: -45vw;
+  right: -40vw;
+  height: 30vw;
+  z-index: 0;
+}
+.contactForm {
+  z-index: 1;
+  position: relative;
+  top: -25vw;
+}
+@media (max-width: 650px) {
+  .contactImg {
+    position: relative;
+    opacity: 0.32;
+    top: -8vw;
+    height: 24vw;
+    left: -15vw;
+    z-index: 1;
+  }
+  .shapeleft {
+    opacity: 0.32;
+    position: relative;
+    top: 3vw;
+    left: -60vw;
+    height: 26vw;
+    z-index: 0;
+  }
+  .shaperight {
+    opacity: 0.32;
+    position: relative;
+    top: -45vw;
+    right: -40vw;
+    height: 30vw;
+    z-index: 0;
+  }
+  .contactForm {
+    z-index: 1;
+    position: relative;
+    top: -18vw;
+  }
+}
