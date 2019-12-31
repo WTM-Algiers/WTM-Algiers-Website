@@ -1,15 +1,11 @@
 .eventSection {
-    transform: skew(0deg, -5deg);
-    background: #f2f2f2;
-    margin-top: 50vw;
+    background: linear-gradient(-5deg, #f2f2f2 45%, white 45%) 100% no-repeat;
 }
 
 .section-content-event {
     text-align: center;
     position: relative;
-    top: -25vw;
     overflow: hidden;
-    transform: skew(0deg, 5deg);
 }
 
 
@@ -62,6 +58,7 @@
 @media screen and (max-width : 50em) {
     .eventSection {
         padding-bottom: 10%;
+        background: linear-gradient(-5deg, #f2f2f2 51%, white 51%) 100% no-repeat;
     }
 
     .blue-svg img {
