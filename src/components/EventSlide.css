@@ -8,6 +8,7 @@
     justify-content: center;
     align-items: flex-start;
     height: 100%;
+    overflow: hidden;
 }
 
 .eventContent {
@@ -83,5 +84,6 @@
 
     .eventContent h1 {
         font-size: 10vw;
+        margin-bottom: 2%;
     }
 }

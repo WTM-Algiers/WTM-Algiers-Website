@@ -5,10 +5,10 @@
 }
 
 .section-content-event {
-    overflow: hidden;
     text-align: center;
     position: relative;
     top: -25vw;
+    overflow: hidden;
     transform: skew(0deg, 5deg);
 }
 
@@ -33,17 +33,16 @@
     color: #5390f5
 }
 
-.green-svg,
-.blue-svg {
+.green-svg img,
+.blue-svg img {
+    position: absolute;
     opacity: 0.32;
 }
 
-.green-svg {
-    height: 16rem;
-    width: 20rem;
-    position: absolute;
-    top: 8%;
-    left: 4%;
+.green-svg img {
+    height: 23vw;
+    top: 6%;
+    left: 6%;
     transform: rotate(-70deg);
 }
 
@@ -53,47 +52,11 @@
     height: 100%;
 }
 
-.blue-svg {
-    height: 18rem;
-    width: 20rem;
-    position: absolute;
-    top: 55%;
-    left: 68%;
+.blue-svg img {
+    height: 23vw;
+    bottom: -9%;
+    left: 69%;
     transform: rotate(120deg);
-}
-
-@media screen and (max-height : 667px) {
-    .section-container {
-        height: 30em;
-    }
-}
-
-@media screen and (min-width : 1403px) {
-    .blue-svg {
-
-        top: 56%;
-        left: 70%;
-    }
-
-    .green-svg {
-        top: 8%;
-        left: 4%;
-    }
-}
-
-@media screen and (max-width : 960px) {
-    .green-svg {
-        top: 6%;
-        left: -4%;
-    }
-}
-
-@media screen and (max-width : 1115px) {
-    .blue-svg {
-
-        top: 56%;
-        left: 64%;
-    }
 }
 
 @media screen and (max-width : 50em) {
@@ -101,25 +64,30 @@
         padding-bottom: 10%;
     }
 
-    .blue-svg {
-
-        height: 12rem;
-        width: 16rem;
-        position: absolute;
-        top: 72%;
-        left: 50%;
+    .blue-svg img {
+        bottom: -7%;
+        left: 74%;
     }
 
-    .green-svg {
-        height: 11rem;
-        width: 10rem;
-        position: absolute;
-        top: 0%;
-        left: -3%;
+    .green-svg img {
+        top: 3%;
+        left: 2%;
     }
 
     .eventSection.title-section {
         text-align: center;
         width: 100%;
     }
+}
+
+@media screen and (max-width : 420PX) {
+
+    .blue-svg img {
+        bottom: -6%;
+    }
+
+    .green-svg img {
+        top: 7%;
+    }
+
 }

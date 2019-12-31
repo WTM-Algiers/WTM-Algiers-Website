@@ -14,8 +14,12 @@ const EventSection = () => {
                         <EventSlideShow />
                     </div>
                 </div>
-                <img src={greenShape} alt="greenshape" className="green-svg" />
-                <img src={blueShape} alt="blueshape" className="blue-svg" />
+                <div className="green-svg">
+                    <img src={greenShape} alt="greenshape" />
+                </div>
+                <div className="blue-svg">
+                    <img src={blueShape} alt="blueshape" />
+                </div>
             </div>
         </div>
     )
