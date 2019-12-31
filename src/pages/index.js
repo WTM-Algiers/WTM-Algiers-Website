@@ -7,6 +7,7 @@ import SM from "../components/socialmedia";
 import LP from "../components/landing";
 import EventSlide from '../components/EventSlide'
 import EventSlideShow from '../components/EventSlideShow'
+import EventSection from '../components/EventSection'
 import About from "../components/about_us"
 import Contact from "../components/contact_us"
 
@@ -25,9 +26,8 @@ const IndexPage = () => (
       <About />
     </div>
 
-    <h1>Our Events</h1>
-    <div style={{ width: "100%", height: "30em", margin: "auto" }}>
-      <EventSlideShow></EventSlideShow>
+    <div>
+      <EventSection/>
     </div>
 
     <div

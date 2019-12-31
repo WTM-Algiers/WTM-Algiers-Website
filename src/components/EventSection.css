@@ -1,0 +1,90 @@
+.eventSection {
+    background: linear-gradient(-5deg, #f2f2f2 45%, white 45%) 100% no-repeat;
+}
+
+.section-content-event {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.section-container {
+    width: 100%;
+    height: 30em;
+    margin: auto;
+}
+
+.eventSection.title-section {
+    color: hsl(245, 17%, 29%);
+    width: 100%;
+    text-align: center;
+}
+
+.eventSection.title-section h1 {
+    font-size: 4.25rem;
+}
+
+#our {
+    color: #5390f5
+}
+
+.green-svg img,
+.blue-svg img {
+    position: absolute;
+    opacity: 0.32;
+}
+
+.green-svg img {
+    height: 23vw;
+    top: 6%;
+    left: 6%;
+    transform: rotate(-70deg);
+}
+
+.slideshow {
+    z-index: 1;
+    position: relative;
+    height: 100%;
+}
+
+.blue-svg img {
+    height: 23vw;
+    bottom: -9%;
+    left: 69%;
+    transform: rotate(120deg);
+}
+
+@media screen and (max-width : 50em) {
+    .eventSection {
+        padding-bottom: 10%;
+        background: linear-gradient(-5deg, #f2f2f2 51%, white 51%) 100% no-repeat;
+    }
+
+    .blue-svg img {
+        bottom: -7%;
+        left: 74%;
+    }
+
+    .green-svg img {
+        top: 3%;
+        left: 2%;
+    }
+
+    .eventSection.title-section {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width : 420PX) {
+
+    .blue-svg img {
+        bottom: -6%;
+    }
+
+    .green-svg img {
+        top: 7%;
+    }
+
+}
