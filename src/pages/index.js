@@ -26,26 +26,11 @@ const IndexPage = () => (
       <About />
     </div>
 
-    <div>
+    <div id="section2">
       <EventSection/>
     </div>
 
-    <div
-      style={{
-        maxWidth: `400px`,
-        marginBottom: `0.5rem`,
-        display: "block",
-        margin: "auto"
-      }}
-    >
-      <img src={logo} alt={"WTM Logo"} />
-    </div>
-
-    <p>Welcome to WTM Algiers Official Website.</p>
-    <p>We are still working on it cuerrently, See you Soon ;)</p>
-
-    <SM direction="" />
-    <div style={{ backgroundColor: "#f2f2f2" }}>
+    <div id="section4" style={{ backgroundColor: "#f2f2f2" }}>
       <Contact />
     </div>
   </Layout>

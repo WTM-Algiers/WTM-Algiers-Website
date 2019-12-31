@@ -15,14 +15,14 @@
     margin: auto;
 }
 
-.eventSection.title-section {
+.title-section {
     color: hsl(245, 17%, 29%);
     width: 100%;
+    margin-bottom: 2%;
     text-align: center;
-}
-
-.eventSection.title-section h1 {
-    font-size: 4.25rem;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.21;
 }
 
 #our {

@@ -6,7 +6,7 @@ import "./about_us.css";
 const AboutUs = () => {
   return (
     <div className="flex-container">
-      <p className="section-title">
+      <p className="section-titlea">
         About <span>US</span>{" "}
       </p>
       <div className="paragraphe">
