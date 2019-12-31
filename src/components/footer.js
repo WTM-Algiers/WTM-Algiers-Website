@@ -22,7 +22,7 @@ const Footer = () => (
         </div>
 
       <div className="social">
-        <SM></SM>
+        <SM />
       </div>
     </div>
     <div className="footer-down"></div>

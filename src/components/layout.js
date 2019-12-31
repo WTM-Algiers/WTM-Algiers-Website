@@ -9,8 +9,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
 import NB from "../components/navbar";
-
-import Header from "./header";
 import Footer from "./footer";
 import "./layout.css";
 
@@ -39,7 +37,7 @@ const Layout = ({ children }) => {
         style={{
           margin: `0 auto`,
           paddingTop: 0,
-          display:"contents"
+          display: "contents"
         }}
       >
         <main>{children}</main>

@@ -1,12 +1,7 @@
 import React from "react";
-
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import logo from "../images/logo/WTM-Main.svg";
-import SM from "../components/socialmedia";
 import LP from "../components/landing";
-import EventSlide from '../components/EventSlide'
-import EventSlideShow from '../components/EventSlideShow'
 import EventSection from '../components/EventSection'
 import About from "../components/about_us"
 import Contact from "../components/contact_us"
@@ -27,7 +22,7 @@ const IndexPage = () => (
     </div>
 
     <div id="section2">
-      <EventSection/>
+      <EventSection />
     </div>
 
     <div id="section4" style={{ backgroundColor: "#f2f2f2" }}>

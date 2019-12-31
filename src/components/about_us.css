@@ -12,7 +12,7 @@
   color: #3f3d56;
 }
 
-.section-titlea > span {
+.section-titlea>span {
   color: #03bfa6;
 }
 
@@ -33,20 +33,24 @@
   padding-left: 10%;
 }
 
-.photos > div {
+.photos>div {
   width: 13rem;
   text-align: center;
   line-height: 75px;
   font-size: 2.2rem;
 }
-.photos > div > img {
+
+.photos>div>img {
   margin-bottom: 0px;
 }
-.photos > div > div {
+
+.photos>div>div {
   margin-bottom: 20%;
 }
+
 .photo1 {
-  width: 12.3rem; /* because this photo is bigger than the 2 others*/
+  width: 12.3rem;
+  /* because this photo is bigger than the 2 others*/
 }
 
 .imgTitle {

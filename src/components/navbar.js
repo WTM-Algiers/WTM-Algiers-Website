@@ -67,7 +67,7 @@ const NavBar = ({ menuelements }) => {
             to={"section" + i}
             spy={true}
             smooth={true}
-            offset={i==0?0:-70}
+            offset={i == 0 ? 0 : -70}
             duration={500}
         >
             {item}
@@ -82,7 +82,7 @@ const NavBar = ({ menuelements }) => {
             to={"section" + i}
             spy={true}
             smooth={true}
-            offset={i==0?0:-70}
+            offset={i == 0 ? 0 : -70}
             duration={500}
             onClick={hideMenu}
         >
@@ -120,9 +120,9 @@ const NavBar = ({ menuelements }) => {
     )
 
     const nav = (
-        <div className={!visible?"nav-bar scrolled-menu":"nav-bar"}>
+        <div className={!visible ? "nav-bar scrolled-menu" : "nav-bar"}>
             <div className="logo">
-                {!visible?<img src={imageUrl} alt="Women TechMakers Algiers" />:null}
+                {!visible ? <img src={imageUrl} alt="Women TechMakers Algiers" /> : null}
             </div>
             {useWindowWidth() >= 450 ? links : menuButton}
         </div>

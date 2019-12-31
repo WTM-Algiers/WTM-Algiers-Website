@@ -1,11 +1,7 @@
 .text-message {
   margin-top: 5%;
   font-size: 2.5vw;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.22;
-  letter-spacing: normal;
   text-align: center;
   color: #3f3d56;
 }

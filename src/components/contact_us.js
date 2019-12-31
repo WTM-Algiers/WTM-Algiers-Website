@@ -12,7 +12,7 @@ const conactUs = () => (
 
     <div className="contact-section">
       <div className="SL">
-        <img className={"shapeleft"} src={shapeleft} />
+        <img className={"shapeleft"} src={shapeleft} alt="decoration shape" />
         <img src={contactImg} className={"contactImg"} alt="Contact svg" />
       </div>
       <div className={"contactForm"}>
@@ -20,7 +20,7 @@ const conactUs = () => (
       </div>
 
       <div className="SR">
-        <img className={"shaperight"} src={shaperight} />
+        <img className={"shaperight"} src={shaperight} alt="decoration shape" />
       </div>
     </div>
 

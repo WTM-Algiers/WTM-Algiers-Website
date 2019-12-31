@@ -57,22 +57,16 @@ const EventSlideShow = () => {
                     slider: 'slider',
                     track: 'track',
                 }}
-
                 nextButton={<img className="slideButton" src={next} title="next event" />}
-
                 previousButton={<img className="slideButton" src={previous} title="previous event" />}
             >
 
-                {(!loading) ? events.map((slide, index) => <div key={index}>
-                    {slide}
-                </div>) : <div key={0}>
-                        <img className="loading" src={loadgif} width={100} height={100} />
-                    </div>}
+                {(!loading) ? events.map((slide, index) => <div key={index}>{slide}</div>) : <div key={0}>
+                    <img className="loading" src={loadgif} width={100} height={100} />
+                </div>}
             </Slider>
         </div>
     )
 }
-
-
 
 export default EventSlideShow

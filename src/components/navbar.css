@@ -87,7 +87,7 @@ a.navbar-item:hover {
     position: absolute;
     left: -10%;
     width: 40rem;
-    bottom:2%;
+    bottom: 2%;
     opacity: 0.25;
     z-index: -1;
 }

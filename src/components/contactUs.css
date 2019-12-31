@@ -54,6 +54,7 @@ button:focus {
 }
 
 @media (max-width: 650px) {
+
   input[type="text"],
   input[type="email"] {
     height: 5vw;

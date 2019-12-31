@@ -29,15 +29,18 @@ const AboutUs = () => {
       <div className="photos">
         <div>
           {" "}
-          <img src={Workshops} className="photo1" /> <div className="imgTitle">Workshops </div>
+          <img src={Workshops} className="photo1" alt="workshops" />
+          <div className="imgTitle">Workshops </div>
         </div>
         <div>
           {" "}
-          <img src={Conference} /> <div className="imgTitle"> Conferences</div>
+          <img src={Conference} alt="conferences" />
+          <div className="imgTitle"> Conferences</div>
         </div>
         <div>
           {" "}
-          <img src={Meetups} /> <div className="imgTitle">Meetups</div>
+          <img src={Meetups} alt="meetups" />
+          <div className="imgTitle">Meetups</div>
         </div>
       </div>
     </div>

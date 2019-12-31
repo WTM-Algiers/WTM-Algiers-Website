@@ -1,5 +1,6 @@
 import React from 'react'
 import './contactUs.css'
+
 const contactUs = () => (
   <div className={'contact-form'}>
     <form
@@ -32,4 +33,5 @@ const contactUs = () => (
     </form>
   </div>
 )
+
 export default contactUs

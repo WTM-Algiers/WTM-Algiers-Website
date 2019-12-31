@@ -15,7 +15,7 @@ const NotFound404 = () => {
         />
       </div>
       <div className="center">
-        <img src={image404} />
+        <img src={image404} alt="404 error" />
         <div className="text-message">
           It appears that you used an invalid link press
           <Link className="text-style-1" to="./">
