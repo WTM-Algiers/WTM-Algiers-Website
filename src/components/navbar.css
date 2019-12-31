@@ -64,7 +64,7 @@ a.navbar-item:hover {
     text-decoration: underline;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 450px) {
 
     .nav-bar {
         grid-template-columns: 15% auto 10%;

@@ -1,0 +1,73 @@
+.text-message {
+  margin-top: 5%;
+  font-size: 2.5vw;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  text-align: center;
+  color: #3f3d56;
+}
+
+.text-message .text-style-1 {
+  font-weight: bold;
+  color: #3f3d56;
+  text-decoration: none !important;
+}
+
+.container {
+  position: relative;
+}
+
+.center {
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  top: 5rem;
+  transform: translate(-50%, 7%);
+}
+
+.error-back {
+  position: fixed;
+  min-width: 80%;
+  top: -15%;
+  left: 10%;
+  transform: translate(34%, -15%);
+  opacity: 0.2;
+  margin-bottom: 0.5rem;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+@media only screen and (max-width: 1024px) {
+  .error-back {
+    left: 50%;
+    top: 5rem;
+    transform: translate(-40%, -10%);
+    min-width: 140%;
+  }
+
+  .center {
+    transform: translate(-50%, 30%);
+    width: 70%;
+  }
+
+  .text-message {
+    font-size: 6vw;
+    margin-top: 40%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .center {
+    transform: translate(-50%, 20%);
+  }
+
+  .text-message {
+    margin-top: 80%;
+  }
+}
