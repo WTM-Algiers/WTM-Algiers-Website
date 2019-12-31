@@ -10,6 +10,8 @@
   font-weight: bold;
   line-height: 1.21;
   color: #3f3d56;
+  position: relative;
+  top: 6vw;
 }
 
 .section-title>span {
@@ -89,5 +91,9 @@
 
   .SL {
     height: 35vw;
+  }
+
+  .section-title {
+    top: 2vw;
   }
 }
