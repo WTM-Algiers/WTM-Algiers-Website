@@ -9,7 +9,7 @@ import './partner.css';
 const partner = () => (
     <div className="section-holder">
         <div className="section-title">
-            <span id="our">OUR</span> PARTNERS
+            <span className="our">OUR</span> PARTNERS
         </div>
 
         <div className="partner-holder">

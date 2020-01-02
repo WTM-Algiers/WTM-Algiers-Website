@@ -9,7 +9,7 @@ const EventSection = () => {
         <div>
             <div className="eventSection">
                 <div className="section-content-event">
-                    <h1 className="title-section"><span id="our">OUR</span> EVENTS</h1>
+                    <h1 className="title-section"><span className="our">OUR</span> EVENTS</h1>
                     <div className="section-container">
                         <div className="slideshow">
                             <EventSlideShow />

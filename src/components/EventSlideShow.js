@@ -47,7 +47,10 @@ const EventSlideShow = () => {
 
     }, [])
     const events = data.map(event => {
-        return <EventSlide image={event.image} title={event.title} description={event.description} />
+        return <EventSlide
+            image={event.image}
+            title={event.title}
+            description={event.description} />
     })
     return (
         <div className="SlideShowContent">
@@ -62,7 +65,7 @@ const EventSlideShow = () => {
             >
 
                 {(!loading) ? events.map((slide, index) => <div key={index}>{slide}</div>) : <div key={0}>
-                    <img className="loading" src={loadgif} width={100} height={100} />
+                    <img className="loading" src={loadgif} alt="loading" width={100} height={100} />
                 </div>}
             </Slider>
         </div>
