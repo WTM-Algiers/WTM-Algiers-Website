@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.wtm-algiers.tech/sitemap.xml
+Host: https://www.wtm-algiers.tech
