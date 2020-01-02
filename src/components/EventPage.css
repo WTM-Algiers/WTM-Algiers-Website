@@ -1,16 +1,20 @@
 .page-container {
-    width: 100vw;
+   
     min-height: 100vh;
-    overflow-x: hidden !important;
+    overflow: hidden !important;
 }
 .info-icon img {
     width: 5vw;
-    height: 5vh;
-    margin-right: 1%;
+    height: 3vw;
+
+}
+.page-info p span {
+    margin-right: 1vw;
 }
 .page-content {
     margin: auto;
     display: flex;
+    z-index: 2;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -36,7 +40,7 @@
     margin-top:10% ;
 }
 .page-col2 {
-    margin-left: 10vw;
+    margin-left: 5vw;
 }
 .page-info {
     margin-left: 5%;
@@ -49,21 +53,32 @@
 }
 .return-btn {
     display: block;
-    margin-bottom: 10%;
    text-align: start;
    position: absolute;
    z-index: 1;
    left: 3%;
    top: 5%;
 }
-#svg-blue {
+
+#svg-blue{
+    top: -5vw;
+    left: -2vw;
+    transform: rotate(-13deg);
+    width: 18%;
+    height: 0;
+}
+#svg-green{
+    top: 49vw;
+    width: 30%;
+    height: 0%;
+    left: 90vw;
+    transform: rotate(110deg);
+}
+#svg-blue,#svg-green {
+    display: inline;
     z-index: 0;
     position: absolute;
-    top: -15%;
-    left: -2%;
-    transform: rotate(-13deg);
-    width: 22%;
-    height: 20%;
+   
     opacity: 0.32;
 }
 @media screen and (max-width : 50em) {
@@ -77,12 +92,22 @@
         margin: 0;
         text-align: center;
     }
+    .page-info p span {
+        margin-right: 5vw;
+    }
     .page-col1 {
         margin: auto;
         text-align: center;
     }
+    .info-icon img {
+        width: 7vw;
+        height: 5vh;
+        margin-right: 1%;
+    }
     .page-col2 {
         margin: auto;
+        max-width: 100%;
+        
     }
     .page-social-media {
         text-align: center;
@@ -94,5 +119,25 @@
         justify-content: center;
         align-items: center;
     }
-    
+    .page-description {
+        max-width: 100%;
+        margin: 0 4%;
+    }
+    .return-btn img{
+        width: 80%;
+        height: 80%;
+    }
+    #svg-blue {
+        top: -5vw;
+        left: -3vw;
+        width: 25%;
+    }
+    #svg-green{
+        top: 150vh;
+        width: 55%;
+        height: 0%;
+        left: 87vw;
+        transform: rotate(110deg);
+    }
+          
 }
