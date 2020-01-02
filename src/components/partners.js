@@ -1,9 +1,6 @@
 import React from "react";
 import backgroundShape from "../images/shapes/white-shape-1.svg";
 import logo from "../images/shapes/GDGAlgiers-logo.svg";
-import glogo from "../images/gatsby-icon.png";
-
-
 import './partner.css';
 
 const partner = () => (

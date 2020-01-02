@@ -60,8 +60,8 @@ const EventSlideShow = () => {
                     slider: 'slider',
                     track: 'track',
                 }}
-                nextButton={<img className="slideButton" src={next} title="next event" />}
-                previousButton={<img className="slideButton" src={previous} title="previous event" />}
+                nextButton={<img className="slideButton" src={next} title="next event" alt="next" />}
+                previousButton={<img className="slideButton" src={previous} title="previous event" alt="previous" />}
             >
 
                 {(!loading) ? events.map((slide, index) => <div key={index}>{slide}</div>) : <div key={0}>
