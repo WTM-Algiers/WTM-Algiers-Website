@@ -12,6 +12,7 @@
     width: 100%;
     background-color: #f2f2f2;
     transform: skew(0deg, 5deg);
+    min-height: 100vh;
 }
 
 .social-media-holder {
