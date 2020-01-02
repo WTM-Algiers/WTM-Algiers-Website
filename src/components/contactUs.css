@@ -29,6 +29,7 @@ input[type="email"] {
 
 .textarea {
   height: 20vw;
+  padding-top: 1%;
 }
 
 input:focus,
