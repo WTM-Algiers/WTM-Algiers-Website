@@ -5,6 +5,7 @@ import LP from "../components/landing";
 import EventSection from '../components/EventSection'
 import About from "../components/about_us"
 import Contact from "../components/contact_us"
+import Partners from "../components/partners"
 
 const IndexPage = () => (
   <Layout>
@@ -23,6 +24,10 @@ const IndexPage = () => (
 
     <div id="section2">
       <EventSection />
+    </div>
+
+    <div id="section3">
+      <Partners />
     </div>
 
     <div id="section4" style={{ backgroundColor: "#f2f2f2" }}>
