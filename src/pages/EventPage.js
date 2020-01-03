@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import returnbtn from "../images/Icons/back.svg";
 import "../components/EventPage.css";
 import green from "../images/shapes/green-shape-1.svg";
@@ -12,22 +13,24 @@ import website from "../images/Icons/Website.svg";
 import { useEffect, useState } from "react";
 
 const EventPage = ({ image, title, info, description }) => {
+
   const [ftitle, setFtitle] = useState({
     event: "",
     year: ""
   });
+
   /// preprocess the passed title
   useEffect(() => {
     let items = title.split("'");
     setFtitle({ event: items[0], year: items[1] });
   }, []);
-  const _return =e => {
-    alert('returning')
-  }
+
   return (
     <div className="page-container">
       <div className="return-btn" >
-        <img src={returnbtn} alt="return" onClick={e=>_return(e)}></img>
+        <Link to="/">
+          <img src={returnbtn} alt="return" />
+        </Link>
       </div>
       <div className="page-content">
         <div className="page-col1">
@@ -36,10 +39,10 @@ const EventPage = ({ image, title, info, description }) => {
               image={sampleImage}
               width={350}
               height={350}
-            ></EventImage>
+            />
           </div>
           <div className="page-social-media">
-            <SM></SM>
+            <SM />
           </div>
         </div>
         <div className="page-col2">
@@ -50,19 +53,19 @@ const EventPage = ({ image, title, info, description }) => {
           <div className="page-info">
             <p>
               <span className="info-icon">
-                <img src={location}></img>
+                <img src={location} alt="location icon" />
               </span>
               {info.location}
             </p>
             <p>
               <span className="info-icon">
-                <img src={date}></img>
+                <img src={date} alt="date icon" />
               </span>
               {info.date}
             </p>
             <p>
               <span className="info-icon">
-                <img src={website}></img>{" "}
+                <img src={website} alt="website icon" />{" "}
               </span>
               {info.website}
             </p>
@@ -71,11 +74,10 @@ const EventPage = ({ image, title, info, description }) => {
         </div>
       </div>
       <div id="svg-blue">
-        <img src={blue} alt="blueshape"></img>
+        <img src={blue} alt="blueshape" />
       </div>
-      <div id ="svg-green">
-      <img src={green} alt="greenshape"></img>
-     
+      <div id="svg-green">
+        <img src={green} alt="greenshape" />
       </div>
     </div>
   );
