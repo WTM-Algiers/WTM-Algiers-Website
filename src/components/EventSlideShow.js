@@ -2,38 +2,14 @@ import React from 'react'
 import EventSlide from './EventSlide'
 import next from '../images/Icons/next.svg'
 import previous from '../images/Icons/precedent.svg'
-import img_bg from '../images/gatsby-astronaut.png'
 import Slider from 'react-animated-slider'
 import 'react-animated-slider/build/horizontal.css';
 import loadgif from '../images/loading.gif'
 import './SlideShow.css'
 import { useEffect, useState } from 'react';
 
-const eventData = [
-    {
-        title: "IWD'20",
-        image: img_bg,
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac odio tempor orci dapibus ultrices in iaculis.Ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Risus nec feugiat in fermentum…."
 
-    },
-    {
-        title: "IWD'21",
-        image: img_bg,
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac odio tempor orci dapibus ultrices in iaculis.Ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Risus nec feugiat in fermentum…."
-
-    },
-    {
-        title: "IWD'22",
-        image: img_bg,
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac odio tempor orci dapibus ultrices in iaculis.Ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Risus nec feugiat in fermentum…."
-
-    },
-
-
-]
-
-
-const EventSlideShow = () => {
+const EventSlideShow = ({ eventData }) => {
     const [loading, setLoading] = useState(true);
     /// Loading data
     const [data, setData] = useState([]);

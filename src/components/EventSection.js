@@ -4,7 +4,9 @@ import greenShape from '../images/shapes/green-shape-1.svg'
 import blueShape from '../images/shapes/blue-shape-1.svg'
 import './EventSection.css'
 
-const EventSection = () => {
+
+const EventSection = ({ eventData }) => {
+    
     return (
         <div>
             <div className="eventSection">
@@ -12,7 +14,7 @@ const EventSection = () => {
                     <h1 className="title-section"><span className="our">OUR</span> EVENTS</h1>
                     <div className="section-container">
                         <div className="slideshow">
-                            <EventSlideShow />
+                            <EventSlideShow eventData={eventData} />
                         </div>
                     </div>
                     <div className="green-svg">
