@@ -26,7 +26,8 @@ const EventSlideShow = ({ eventData }) => {
         return <EventSlide
             image={event.image}
             title={event.title}
-            description={event.description} />
+            description={event.description}
+            link={event.link} />
     })
     return (
         <div className="SlideShowContent">

@@ -20,7 +20,7 @@
 }
 
 .eventContent h1 {
-    font-size: 6vw;
+    font-size: 5vw;
     text-align: left;
     color: #03bfa6;
 }
@@ -31,6 +31,16 @@
     line-height: 1.2;
     text-align: left;
     color: #3f3d56;
+}
+
+.b-container {
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+}
+
+.button-text {
+    
 }
 
 @media screen and (max-width: 50em) {

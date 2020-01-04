@@ -17,7 +17,8 @@ const IndexPage = ({
     .map(edge => ({
       title: edge.node.frontmatter.title,
       image: edge.node.frontmatter.picture,
-      description: edge.node.frontmatter.shortdescription
+      description: edge.node.frontmatter.shortdescription,
+      link: edge.node.frontmatter.path
     }))
 
     console.log(edges)

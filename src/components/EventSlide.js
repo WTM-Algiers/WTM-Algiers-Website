@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "gatsby";
 import EventImage from './EventImage'
 import './EventSlide.css'
 const EventSlide = ({ image, title, description, link }) => {
@@ -10,6 +11,11 @@ const EventSlide = ({ image, title, description, link }) => {
         <div className="eventContent">
             <h1>{title}</h1>
             <p>{description}</p>
+        </div>
+        <div className="b-container">
+            <Link to={link}>
+                <span class="button-text">More...</span>
+            </Link>
         </div>
     </div>
 }
