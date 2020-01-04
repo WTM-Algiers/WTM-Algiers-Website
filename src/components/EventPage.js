@@ -4,8 +4,8 @@ import returnbtn from "../images/Icons/back.svg";
 import "../components/EventPage.css";
 import green from "../images/shapes/green-shape-1.svg";
 import blue from "../images/shapes/blue-shape-1.svg";
-import SM from "../components/socialmedia";
-import EventImage from "../components/EventImage";
+import SM from "./socialmedia";
+import EventImage from "./EventImage";
 import sampleImage from "../images/gatsby-astronaut.png";
 import date from "../images/Icons/date.svg";
 import location from "../images/Icons/location.svg";
@@ -21,7 +21,7 @@ const EventPage = ({ image, title, info, description }) => {
 
   /// preprocess the passed title
   useEffect(() => {
-    let items = title.split("'");
+    let items = title.split("-");
     setFtitle({ event: items[0], year: items[1] });
   }, []);
 
@@ -48,7 +48,7 @@ const EventPage = ({ image, title, info, description }) => {
         <div className="page-col2">
           <h1 className="page-event-title">
             <span className="title1">{ftitle.event}</span>
-            <span className="title2"> {`'${ftitle.year}`}</span>
+            <span className="title2"> {ftitle.year!=undefined?ftitle.year:""}</span>
           </h1>
           <div className="page-info">
             <p>
