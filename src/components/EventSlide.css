@@ -1,61 +1,89 @@
-.eventSlide{
+.eventSlide {
     background-color: white;
     display: flex;
     margin: auto;
     border: solid 7px #f2f2f2;
-    border-radius: 50px;
+    border-radius: 6vw;
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    
+    height: 100%;
+    overflow: hidden;
 }
+
 .eventContent {
-    margin: 5%;
+    margin: auto 5%;
 }
-.eventImage{
-    margin-top: auto;
+
+.eventImage {
+    margin: auto;
 }
-.eventContent h1{
-    font-size: 3rem;
+
+.eventContent h1 {
+    font-size: 6vw;
     text-align: left;
     color: #03bfa6;
 }
+
 .eventContent p {
-    font-size: 1rem;
-    max-width: 400px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
+    font-size: 1.5vw;
+    margin-bottom: 0%;
     line-height: 1.2;
-    letter-spacing: normal;
     text-align: left;
     color: #3f3d56;
 }
+
 @media screen and (max-width: 50em) {
-    .eventSlide{
+    .eventSlide {
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
     }
-    
+
     .eventContent {
-        margin-bottom: 0;
+        margin: 5%;
+        padding-top: 15%;
     }
+
     .eventContent p {
-        font-size: 18px;
-    }
-    .eventContent h1 {
-        font-size: 50px;
-    }
-    .eventImage {
-        margin-top: 0;
-        max-width: 50%;
-        max-height: 50%;
-    }
-    .eventContent h1 {
+        font-size: 8vw;
         text-align: center;
     }
-    .eventContent p{
+
+    .eventContent h1 {
+        font-size: 2.5vw;
         text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .eventContent p {
+        font-size: 2vw;
+    }
+
+    .eventContent h1 {
+        font-size: 7vw;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .eventContent p {
+        font-size: 3vw;
+    }
+
+    .eventContent h1 {
+        font-size: 9vw;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .eventContent p {
+        font-size: 4vw;
+    }
+
+    .eventContent h1 {
+        font-size: 10vw;
+        margin-bottom: 2%;
     }
 }

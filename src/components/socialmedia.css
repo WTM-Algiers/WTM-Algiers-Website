@@ -1,4 +1,3 @@
-
 .Social-Media-Button:hover {
     opacity: 1;
     cursor: pointer;
@@ -10,6 +9,6 @@
     width: 1.5rem;
 }
 
-.Vertical{
+.Vertical {
     display: table-cell;
 }

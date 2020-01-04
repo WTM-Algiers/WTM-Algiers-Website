@@ -1,0 +1,39 @@
+.section-holder {
+    background: #f2f2f2;
+}
+
+.partner-holder {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 10%;
+}
+
+.partner-holder>div {
+    width: 25rem;
+    padding: 5%;
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
+
+.partner-logo img {
+    position: absolute;
+    width: 25rem;
+    z-index: 1;
+    margin: 5.8rem auto;;
+}
+
+.partner-logo {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 650px) {
+    .partner-holder>div {
+        padding: 15%;
+        padding-top: 0%;
+    }
+}

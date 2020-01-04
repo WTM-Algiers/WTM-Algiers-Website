@@ -1,101 +1,90 @@
 .eventSection {
-    overflow: hidden;
+    background: linear-gradient(-5deg, #f2f2f2 45%, white 45%) 100% no-repeat;
+}
+
+.section-content-event {
     text-align: center;
     position: relative;
+    overflow: hidden;
 }
+
+
 .section-container {
- width: 100%;
- height: 30em;
- margin: auto;
-}
-.eventSection.title-section {
-    color: hsl(245, 17%, 29%);
-    
     width: 100%;
+    height: 30em;
+    margin: auto;
+}
+
+.title-section {
+    color: hsl(245, 17%, 29%);
+    width: 100%;
+    margin-bottom: 2%;
     text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.21;
 }
-.eventSection.title-section h1 {
-    font-size: 4.25rem;
+
+.our {
+    color: #5390f5 !important;
 }
-#our {
-    color : #5390f5
-}
-.green-svg, .blue-svg {
+
+.green-svg img,
+.blue-svg img {
+    position: absolute;
     opacity: 0.32;
 }
-.green-svg {
-    height: 16rem;
-    width:20rem;
-    position: absolute;
-    top: 8%;
-    left: 4%;
+
+.green-svg img {
+    height: 23vw;
+    top: 6%;
+    left: 6%;
     transform: rotate(-70deg);
 }
+
 .slideshow {
     z-index: 1;
     position: relative;
     height: 100%;
 }
-.blue-svg{
-    height: 18rem;
-    width:20rem;
-    position: absolute;
-    top :55%;
-    left: 68%;
+
+.blue-svg img {
+    height: 23vw;
+    bottom: -9%;
+    left: 69%;
     transform: rotate(120deg);
 }
 
-@media screen and (max-height : 667px) {
-    .section-container {
-        height: 30em;
+@media screen and (max-width : 50em) {
+    .eventSection {
+        padding-bottom: 10%;
+        background: linear-gradient(-5deg, #f2f2f2 51%, white 51%) 100% no-repeat;
+    }
+
+    .blue-svg img {
+        bottom: -7%;
+        left: 74%;
+    }
+
+    .green-svg img {
+        top: 3%;
+        left: 2%;
+    }
+
+    .eventSection.title-section {
+        text-align: center;
+        width: 100%;
     }
 }
 
-@media screen and (min-width : 1403px) {
-    .blue-svg {
-    
-        top : 56%;
-        left: 70%;
-       }
-       .green-svg {
-        top : 8%;
-        left: 4%;
+@media screen and (max-width : 420PX) {
+
+    .blue-svg img {
+        bottom: -6%;
     }
-}
-@media screen and (max-width : 960px){
-    .green-svg {
-        top : 6%;
-        left: -4%;
+
+    .green-svg img {
+        top: 7%;
     }
-}
-@media screen and (max-width : 1115px){
-    .blue-svg {
-    
-        top : 56%;
-        left: 64%;
-       }
-}
-@media screen and (max-width : 50em) {
-   .eventSection {
-       padding-bottom: 10%;
-   }
-    .blue-svg {
-    
-    height: 12rem;
-    width:16rem;
-    position: absolute;
-    top : 72%;
-    left: 50%;
-   }
-   .green-svg {
-    height: 11rem;
-    width:10rem;
-    position: absolute;
-    top: 0%;
-    left: -3%;
-   }
-   .eventSection.title-section {
-       text-align: center;
-        width: 100%;
-    }
+
 }

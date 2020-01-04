@@ -9,15 +9,14 @@
 }
 
 .slideButton {
-
     margin: auto;
     opacity: 0.5;
 }
 
 .slide {
     width: 70%;
-    margin-top: 5em;   
     margin-left: 15%;
+    height: 100%;
 
 }
 
@@ -26,45 +25,31 @@
     transition: all 0.5s ease;
 }
 
+.slide.animateOut.next,
 .slide.previous {
     left: -81%;
-
 }
 
+.slide.animateOut.previous,
 .slide.next {
     left: 81%;
-  
-}
-
-.slide.animateOut.next {
-    left: -81%;
-}
-
-.slide.animateOut.previous {
-    left: 81%;
 
 }
+
 .loading {
     position: relative;
     top: 7em;
 }
 
-@media screen and (max-width : 958px){
-    .track {
-        margin-top: 10%;
-    }
+.SlideShowContent {
+    height: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
-@media screen and (max-width: 50em) {
-    .slider {
 
-        min-height: 100%;
-        height: 100%;
-        min-width: 200px;
-       
-    }
-    .track {
-        margin-top: 0;
-    }
+
+@media screen and (max-width: 50em) {
+
     .slide {
         margin-top: auto;
         width: 80%;
@@ -75,7 +60,6 @@
     .slider a.nextButton {
         right: 0px;
         font-size: 16px;
-
     }
 
     .slider a.previousButton {
@@ -88,12 +72,18 @@
         transition: all 0.5s ease;
     }
 
-    .slide.previous, .slide.animateOut.next {
+    .slide.previous,
+    .slide.animateOut.next {
         left: -85%;
     }
 
-    .slide.next, .slide.animateOut.previous  {
+    .slide.next,
+    .slide.animateOut.previous {
         left: 85%;
+    }
+
+    .SlideShowContent {
+        padding-top: 0%;
     }
 
 }

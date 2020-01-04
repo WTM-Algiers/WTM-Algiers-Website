@@ -1,28 +1,39 @@
 import React from "react";
-
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import logo from "../images/logo/WTM-Main.svg";
-import SM from "../components/socialmedia";
 import LP from "../components/landing";
-import EventSlide from '../components/EventSlide'
-import EventSlideShow from '../components/EventSlideShow'
 import EventSection from '../components/EventSection'
-import EventPage from './EventPage'
+import About from "../components/about_us"
+import Contact from "../components/contact_us"
+import Partners from "../components/partners"
+
 const IndexPage = () => (
-  <EventPage
-    title="IWD'20"
-    info={{
-      location: "Algiers",
-      date: "2020-03-8",
-      website: "www.iwd.com"
-    }}
-    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac odio tempor orci dapibus ultrices in iaculis.Ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Risus nec feugiat in fermentum…."
+  <Layout>
+    <SEO
+      description="Women TechMakers Algiers / WTM Algiers Official Website"
+      title="WTM Algiers Website Main Home"
+    />
 
-  >
+    <div id="section0">
+      <LP />
+    </div>
 
-  </EventPage>
+    <div id="section1">
+      <About />
+    </div>
 
-)
+    <div id="section2">
+      <EventSection />
+    </div>
 
-export default IndexPage
+    <div id="section3">
+      <Partners />
+    </div>
+
+    <div id="section4" style={{ backgroundColor: "#f2f2f2" }}>
+      <Contact />
+    </div>
+  </Layout>
+);
+
+export default IndexPage;

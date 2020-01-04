@@ -1,17 +1,18 @@
 import React from "react";
 import { useState, useEffect } from 'react';
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import "./navbar.css";
-import logo from "../images/logo/WTM\ logo.svg";
+import logo from "../images/logo/WTM logo.svg";
 import logoM from "../images/logo/WTM.svg";
 import menubutton from "../images/Icons/menu.svg";
 import backbutton from "../images/Icons/back.svg";
 import backgroundImg from "../images/logo/WTM-Main.svg";
 
 
+const Wwidth = typeof window !== 'undefined' && window
 
 const useWindowWidth = () => {
-    const [windowWidth, setWindowWidth] = useState(null);
+    const [windowWidth, setWindowWidth] = useState(Wwidth.innerWidth);
 
     const handleWindowResize = () => {
         setWindowWidth(window.innerWidth);
@@ -36,7 +37,6 @@ const NavBar = ({ menuelements }) => {
             let temp = window.pageYOffset
 
             setVisible(pos < 30);
-            console.log(temp);
             setPos(temp)
         };
         window.addEventListener("scroll", handleScroll);
@@ -55,7 +55,7 @@ const NavBar = ({ menuelements }) => {
         setshowMMenu(false);
     }
 
-    const imageUrl = useWindowWidth() >= 650 ? logo : logoM;
+    const imageUrl = useWindowWidth() >= 450 ? logo : logoM;
 
     const sections = menuelements.map((item, i) => {
         return <Link
@@ -65,7 +65,7 @@ const NavBar = ({ menuelements }) => {
             to={"section" + i}
             spy={true}
             smooth={true}
-            offset={35}
+            offset={i === 0 ? 0 : -70}
             duration={500}
         >
             {item}
@@ -80,8 +80,9 @@ const NavBar = ({ menuelements }) => {
             to={"section" + i}
             spy={true}
             smooth={true}
-            offset={35}
+            offset={i === 0 ? 0 : -70}
             duration={500}
+            onClick={hideMenu}
         >
             {item}
         </Link>
@@ -117,16 +118,16 @@ const NavBar = ({ menuelements }) => {
     )
 
     const nav = (
-        <div className={!visible?"nav-bar scrolled-menu":"nav-bar"}>
+        <div className={!visible ? "nav-bar scrolled-menu" : "nav-bar"}>
             <div className="logo">
-                {!visible?<img src={imageUrl} alt="Women TechMakers Algiers" />:null}
+                {!visible ? <img src={imageUrl} alt="Women TechMakers Algiers" /> : null}
             </div>
-            {useWindowWidth() >= 650 ? links : menuButton}
+            {useWindowWidth() >= 450 ? links : menuButton}
         </div>
     )
 
     return (
-        showMMenu && mobileMenu || nav
+        (showMMenu && mobileMenu) || nav
     );
 }
 

@@ -1,11 +1,11 @@
 import React from 'react'
 import EventImage from './EventImage'
 import './EventSlide.css'
-const EventSlide= ({image,title,description,link}) => {
+const EventSlide = ({ image, title, description, link }) => {
 
     return <div className="eventSlide">
         <div className="eventImage">
-            <EventImage image={image} width="350" height="350"></EventImage>
+            <EventImage image={image} width="350" height="350" />
         </div>
         <div className="eventContent">
             <h1>{title}</h1>
