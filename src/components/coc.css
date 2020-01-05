@@ -1,0 +1,155 @@
+.coc-content {
+    text-align: center;
+    padding: 5%;
+    margin-bottom: 10%;
+    z-index: 1;
+    position: relative;
+}
+
+.coc-title {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.coc-sub-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.coc-title1 {
+    color: #3f3d56;
+}
+
+.coc-title2 {
+    color: #03bfa6
+}
+
+.coc-container ul {
+    text-align: start;
+}
+
+.coc-container {
+    display: inline-grid;
+    grid-auto-rows: auto auto auto;
+    grid-row-gap: 2%;
+}
+
+.coc-bp {
+    display: inline-grid;
+    grid-auto-columns: 48% 48%;
+    grid-column-gap: 4%;
+}
+
+.coc-agree {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.coc-donot {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+
+.flat-butt {
+    display: inline-block;
+    margin: 0 5px;
+    border-radius: 16px;
+    font-family: "Lato", sans-serif;
+    font-size: 16.5px;
+    padding: 12px 20px;
+    border: 0;
+    background: #005580;
+    color: #FFF;
+    cursor: pointer;
+    outline: 0;
+}
+
+.flat-butt:hover {
+    background: #5390f5;
+}
+
+.coc-return-btn {
+    display: block;
+    text-align: start;
+    position: absolute;
+    z-index: 1;
+    left: 3%;
+    top: 3%;
+}
+
+#coc-svg-blue {
+    top: -5vw;
+    left: 0vw;
+    transform: rotate(-13deg);
+    width: 13rem;
+}
+
+#coc-svg-green {
+    width: 25rem;
+    right: -6%;
+    bottom: -20%;
+    transform: rotate(110deg);
+}
+
+#coc-svg-blue,
+#coc-svg-green {
+    display: inline;
+    z-index: 0;
+    position: absolute;
+    opacity: 0.32;
+}
+
+@media screen and (max-width : 1024px) {
+    .coc-content {
+        margin-top: 12%;
+    }
+
+    #coc-svg-blue {
+        top: -7vw;
+        left: 0vw;
+    }
+
+    #coc-svg-green {
+        right: -10%;
+    }
+}
+
+@media screen and (max-width : 650px) {
+    .coc-content {
+        margin-bottom: 20%;
+        margin-top: 20%;
+    }
+
+    .coc-bp {
+        display: inline-grid;
+        grid-auto-columns: 100%;
+        grid-auto-rows: auto auto;
+        grid-column-gap: 0%;
+        grid-row-gap: 2%;
+    }
+
+    .coc-agree {
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .coc-donot {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    #coc-svg-green {
+        bottom: -15%;
+        right: -17%;
+    }
+
+    #coc-svg-blue {
+        left: -1%;
+        top: -2%;
+    }
+}
