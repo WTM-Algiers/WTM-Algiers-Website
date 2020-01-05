@@ -6,13 +6,12 @@ import green from "../images/shapes/green-shape-1.svg";
 import blue from "../images/shapes/blue-shape-1.svg";
 import SM from "./socialmedia";
 import EventImage from "./EventImage";
-import sampleImage from "../images/gatsby-astronaut.png";
 import date from "../images/Icons/date.svg";
 import location from "../images/Icons/location.svg";
 import website from "../images/Icons/Website.svg";
 import { useEffect, useState } from "react";
 
-const EventPage = ({ image, title, info, description }) => {
+const EventPage = ({ image, title, info, description, fb_link, twitter_link, github_link, linkedin_link }) => {
 
   const [ftitle, setFtitle] = useState({
     event: "",
@@ -36,13 +35,13 @@ const EventPage = ({ image, title, info, description }) => {
         <div className="page-col1">
           <div className="page-img-frame">
             <EventImage
-              image={sampleImage}
+              image={image}
               width={350}
               height={350}
             />
           </div>
           <div className="page-social-media">
-            <SM />
+            <SM facebook_link={fb_link} github_link={github_link} linkedin_link={linkedin_link} twitter_link={twitter_link} />
           </div>
           <Link to="../../coc">
             <button class="flat-butt">Code of conduct</button>
