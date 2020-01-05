@@ -17,8 +17,9 @@ const AboutUs = () => {
           program has been created in 2012, in order to spread learning and
           build role models globally, since, more than 200 communities have been
           launched locally. <b>WTM Algiers </b>is one of these communities, it aims to
-          inspire and enable more women to join the tech industry. Our
-          community, located at the National Higher School of Computer science,
+          inspire and enable more women to join the tech industry. 
+          <br/>
+          Our community, located at the National Higher School of Computer science,
           Algiers, Algeria, isn’t just driven by developers but anyone who is
           excited about technology, and focuses on understanding the needs of
           women and underrepresented groups locally by providing them with

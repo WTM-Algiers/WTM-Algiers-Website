@@ -14,7 +14,7 @@ const EventSlide = ({ image, title, description, link }) => {
             </div>
         </div>
         <div className="eventContent">
-            <h1>{title}</h1>
+            <h1>{title.replace('-',' ')}</h1>
             <p>{description}</p>
         </div>
     </div>
