@@ -16,12 +16,10 @@ const EventSlideShow = ({ eventData }) => {
 
     useEffect(() => {
         // load events data from markdown instead of eventData object 
-        setTimeout(() => {
-            setData(eventData)
-            setLoading(false)
-        }, 4000)
+        setData(eventData)
+        setLoading(false)
 
-    }, [])
+    }, [eventData])
     const events = data.map(event => {
         return <EventSlide
             image={event.image}

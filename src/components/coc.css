@@ -56,19 +56,19 @@
 .flat-butt {
     display: inline-block;
     margin: 0 5px;
-    border-radius: 16px;
+    border-radius: 50px;
     font-family: "Lato", sans-serif;
     font-size: 16.5px;
     padding: 12px 20px;
     border: 0;
-    background: #005580;
+    background: #3f3d56;
     color: #FFF;
     cursor: pointer;
     outline: 0;
 }
 
 .flat-butt:hover {
-    background: #5390f5;
+    background: #005580;
 }
 
 .coc-return-btn {
@@ -78,6 +78,7 @@
     z-index: 1;
     left: 3%;
     top: 3%;
+    z-index: 2;
 }
 
 #coc-svg-blue {

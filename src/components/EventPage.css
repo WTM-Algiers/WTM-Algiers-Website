@@ -21,7 +21,7 @@
     min-height: 100vh;
 }
 
-.page-title {
+.page-event-title {
     text-align: center;
     font-size: 7vw;
     font-weight: bold;
@@ -47,6 +47,7 @@
 .page-col1 {
     margin-top: 10%;
     align-self: center;
+    text-align: center;
 }
 
 .page-col2 {

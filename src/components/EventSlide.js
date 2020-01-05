@@ -7,15 +7,15 @@ const EventSlide = ({ image, title, description, link }) => {
     return <div className="eventSlide">
         <div className="eventImage">
             <EventImage image={image} width="350" height="350" />
+            <div className="b-container">
+                <Link to={link}>
+                    <button class="flat-butt">More Details...</button>
+                </Link>
+            </div>
         </div>
         <div className="eventContent">
             <h1>{title}</h1>
             <p>{description}</p>
-        </div>
-        <div className="b-container">
-            <Link to={link}>
-                <span class="button-text">More...</span>
-            </Link>
         </div>
     </div>
 }

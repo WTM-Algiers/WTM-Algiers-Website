@@ -17,6 +17,8 @@
 
 .eventImage {
     margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .eventContent h1 {
@@ -35,15 +37,14 @@
 
 .b-container {
     position: absolute;
-    bottom: 5%;
-    right: 10%;
-}
-
-.button-text {
-    
+    bottom: 15%;
 }
 
 @media screen and (max-width: 50em) {
+    .b-container {
+        bottom: 5%;
+    }
+
     .eventSlide {
         flex-direction: column-reverse;
         align-items: center;

@@ -23,7 +23,7 @@ const EventPage = ({ image, title, info, description }) => {
   useEffect(() => {
     let items = title.split("-");
     setFtitle({ event: items[0], year: items[1] });
-  }, []);
+  }, [title]);
 
   return (
     <div className="page-container">
@@ -44,11 +44,14 @@ const EventPage = ({ image, title, info, description }) => {
           <div className="page-social-media">
             <SM />
           </div>
+          <Link to="../../coc">
+            <button class="flat-butt">Code of conduct</button>
+          </Link>
         </div>
         <div className="page-col2">
           <h1 className="page-event-title">
             <span className="title1">{ftitle.event}</span>
-            <span className="title2"> {ftitle.year!=undefined?ftitle.year:""}</span>
+            <span className="title2"> {ftitle.year !== undefined ? ftitle.year : ""}</span>
           </h1>
           <div className="page-info">
             <p>
