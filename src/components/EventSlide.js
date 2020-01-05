@@ -9,7 +9,7 @@ const EventSlide = ({ image, title, description, link }) => {
             <EventImage image={image} width="350" height="350" />
             <div className="b-container">
                 <Link to={link}>
-                    <button class="flat-butt">More Details...</button>
+                    <button className="flat-butt">More Details...</button>
                 </Link>
             </div>
         </div>

@@ -199,4 +199,11 @@
         bottom: -5%;
     }
 
+    .return-btn {
+        top: 3%;
+    }
+
+    .page-content {
+        margin-top: 25%;
+    }
 }

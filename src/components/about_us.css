@@ -33,18 +33,21 @@
 }
 
 .photos>div {
-  width: 13rem;
   text-align: center;
   line-height: 75px;
   font-size: 2.2rem;
+}
+
+.pic {
+  width: 13rem;
 }
 
 .photos>div>img {
   margin-bottom: 0px;
 }
 
-.photos>div>div {
-  margin-bottom: 20%;
+.photos {
+  margin-bottom: 5%;
 }
 
 .photo1 {

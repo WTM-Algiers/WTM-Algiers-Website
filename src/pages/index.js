@@ -1,4 +1,5 @@
 import React from "react";
+import { graphql } from 'gatsby'
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import LP from "../components/landing";
@@ -20,8 +21,6 @@ const IndexPage = ({
       description: edge.node.frontmatter.shortdescription,
       link: edge.node.frontmatter.path
     }))
-
-    console.log(edges)
 
   return (
     <Layout>

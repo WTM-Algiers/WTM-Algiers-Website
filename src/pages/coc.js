@@ -64,7 +64,7 @@ const SecondPage = () => {
               up to and including expulsion from all GDG Algiers and WTM Algiers spaces or events and identification of
               that person as a harasser to other GDG Algiers or WTM Algiers members or the general public.
             </p>
-            <button class="flat-butt">Check the complete version!</button>
+            <button className="flat-butt">Check the complete version!</button>
           </div>
         </div>
       </div>

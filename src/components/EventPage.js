@@ -43,8 +43,8 @@ const EventPage = ({ image, title, info, description, fb_link, twitter_link, git
           <div className="page-social-media">
             <SM facebook_link={fb_link} github_link={github_link} linkedin_link={linkedin_link} twitter_link={twitter_link} />
           </div>
-          <Link to="../../coc">
-            <button class="flat-butt">Code of conduct</button>
+          <Link to="/coc">
+            <button className="flat-butt">Code of conduct</button>
           </Link>
         </div>
         <div className="page-col2">
