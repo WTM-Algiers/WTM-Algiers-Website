@@ -4,7 +4,7 @@ date: "2019-04-27"
 title: "IWD-'19"
 location: "Centre Culturel Ali Maachi - Bordj El Bahri, Algiers -"
 website: "https://iwd19-algiers.netlify.com/"
-picture: ""
+picture: https://miro.medium.com/max/800/1*s0KUfzonlX2HQvHrboAmFw.png
 facebook: "https://www.facebook.com/events/389148445016159/"
 twitter: ""
 github: ""
