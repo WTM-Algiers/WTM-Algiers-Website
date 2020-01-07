@@ -5,7 +5,7 @@ id: "iwd20"
 title: "IWD-'20"
 location: "Algiers"
 website: "https://www.wtm-algiers.tech/events/IWD20"
-picture: https://i.ytimg.com/vi/gck4RjaX5D4/maxresdefault.jpg
+picture: https://raw.githubusercontent.com/WTM-Algiers/WTM-Algiers-Website/master/src/images/events/IWD.jpeg
 facebook: ""
 twitter: ""
 github: ""
