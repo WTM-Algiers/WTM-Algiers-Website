@@ -3,7 +3,14 @@
     min-height: 100vh;
     overflow: hidden;
 }
-
+a{
+    text-decoration-line: none;
+    color : hsla(0, 0%, 0%, 0.8);
+}
+a:hover {
+color: rgb(3, 191, 166);
+    
+}
 .info-icon img {
     width: 2.5vw;
 }

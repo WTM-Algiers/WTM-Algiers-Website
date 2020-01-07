@@ -1,9 +1,10 @@
 ---
 path: "/events/IWD20"
 date: "2020-03-07"
+id: "iwd20"
 title: "IWD-'20"
 location: "Algiers"
-website: "www.wtm-algiers.tech/events/IWD20"
+website: "https://www.wtm-algiers.tech/events/IWD20"
 picture: https://i.ytimg.com/vi/gck4RjaX5D4/maxresdefault.jpg
 facebook: ""
 twitter: ""

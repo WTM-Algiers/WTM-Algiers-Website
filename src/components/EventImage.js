@@ -1,17 +1,17 @@
 import React from 'react';
 import './EventImage.css'
-const EventImage = ({ image, width, height }) => {
-
+const EventImage = ({id, image, width, height }) => {
+  console.log(image)
   return (
     <Frame
+      id={id}
       content={image}
-      id="frame"
       width={width}
       height={height} />
   )
 }
 
-const Frame = ({ content, width, height }) => {
+const Frame = ({id, content, width, height }) => {
   return <svg className="image-frame" xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 1144.569 1219.578">
     <g id="Group_476" data-name="Group 476" transform="translate(-301.071 -67.938)">
       <path id="Path_1475" data-name="Path 1475" d="M325.526,633.118C528.6,617.707,770.808,460.411,758.492,298.425S511.6-14.323,308.519,1.088-11.43,319.281.885,481.267C13.2,643.169,122.448,648.613,325.526,633.118Z" transform="translate(301.072 400.637) rotate(-26)" fill="#04c0a6" opacity="0.31" />
@@ -53,17 +53,22 @@ const Frame = ({ content, width, height }) => {
       </g>
       <path id="Path_1507" data-name="Path 1507" d="M325.526,633.118C528.6,617.707,770.808,460.411,758.492,298.425S511.6-14.323,308.519,1.088-11.43,319.281.885,481.267C13.2,643.169,122.448,648.613,325.526,633.118Z" transform="translate(744.935 354.772) rotate(30)" fill="#5390f5" opacity="0.31" />
       <defs>
-        <pattern id="img1" patternUnits="objectBoundingBox" width="100%" height="100%">
-          <image className="image-fill" preserveAspectRatio="none" href={content} x="0" y="0" width="100%" height="100%" />
-        </pattern>
+        <Pattern id={id} url={content}></Pattern>
       </defs>
       <path id="XMLID_1_" d="M214.42,239.071c34.7-95.191-56.033-162.366-21.012-208.529,51.574-67.812,324.732-24.2,461.31,145.811,95.827,119.068,46.48,202.8,162.367,310.406,88.506,81.82,173.508,85.322,196.431,165.868,17.192,60.171-10.508,127.028-40.752,164.276-169.688,209.8-868.5,40.432-957.641-235.272-8.6-26.742-24.833-77.044-7.322-131.8C44.093,339.038,177.171,341.9,214.42,239.071Z" transform="matrix(1, -0.017, 0.017, 1, 376.572, 168.809)" fill="#fff" />
-      <path id="XMLID_2_" d="M214.42,239.071c34.7-95.191-56.033-162.366-21.012-208.529,51.574-67.812,324.732-24.2,461.31,145.811,95.827,119.068,46.48,202.8,162.367,310.406,88.506,81.82,173.508,85.322,196.431,165.868,17.192,60.171-10.508,127.028-40.752,164.276-169.688,209.8-868.5,40.432-957.641-235.272-8.6-26.742-24.833-77.044-7.322-131.8C44.093,339.038,177.171,341.9,214.42,239.071Z" transform="matrix(1, -0.017, 0.017, 1, 376.572, 168.809)" fill="url(#img1)" />
+      <path id="XMLID_2_" d="M214.42,239.071c34.7-95.191-56.033-162.366-21.012-208.529,51.574-67.812,324.732-24.2,461.31,145.811,95.827,119.068,46.48,202.8,162.367,310.406,88.506,81.82,173.508,85.322,196.431,165.868,17.192,60.171-10.508,127.028-40.752,164.276-169.688,209.8-868.5,40.432-957.641-235.272-8.6-26.742-24.833-77.044-7.322-131.8C44.093,339.038,177.171,341.9,214.42,239.071Z" transform="matrix(1, -0.017, 0.017, 1, 376.572, 168.809)" fill={`url(#${id})`} />
 
     </g>
 
   </svg>
 }
 
+const Pattern =({id,url}) =>{
+
+  return <pattern id={id} patternUnits="objectBoundingBox" width="100%" height="100%">
+          <image className="image-fill" preserveAspectRatio="none" href={url} x="0" y="0" width="100%" height="100%" />
+    </pattern>
+
+}
 
 export default EventImage

@@ -10,6 +10,7 @@ export default function EventTemplate({
   return (
 
     <EventPage
+      id={frontmatter.id}
       title={frontmatter.title}
       image={frontmatter.picture}
       fb_link={frontmatter.facebook}
@@ -31,6 +32,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
+        id
         date(formatString: "MMMM DD, YYYY")
         path
         title
