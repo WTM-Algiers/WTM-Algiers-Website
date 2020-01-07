@@ -11,13 +11,13 @@ import location from "../images/Icons/location.svg";
 import website from "../images/Icons/Website.svg";
 import { useEffect, useState } from "react";
 
-const EventPage = ({ image, title, info, description, fb_link, twitter_link, github_link, linkedin_link }) => {
+const EventPage = ({id, image, title, info, description, fb_link, twitter_link, github_link, linkedin_link }) => {
 
   const [ftitle, setFtitle] = useState({
     event: "",
     year: ""
   });
-
+  
   /// preprocess the passed title
   useEffect(() => {
     let items = title.split("-");
@@ -35,6 +35,7 @@ const EventPage = ({ image, title, info, description, fb_link, twitter_link, git
         <div className="page-col1">
           <div className="page-img-frame">
             <EventImage
+              id={id}
               image={image}
               width={350}
               height={350}
@@ -69,7 +70,7 @@ const EventPage = ({ image, title, info, description, fb_link, twitter_link, git
               <span className="info-icon">
                 <img src={website} alt="website icon" />{" "}
               </span>
-              {info.website}
+              <a href={info.website} target="_blank" rel="noopener noreferrer">{info.website}</a>
             </p>
           </div>
           <div className="page-description"> {description} </div>

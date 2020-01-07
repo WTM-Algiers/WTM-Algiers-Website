@@ -20,8 +20,9 @@ const EventSlideShow = ({ eventData }) => {
         setLoading(false)
 
     }, [eventData])
-    const events = data.map(event => {
+    const events = data.map((event,index) => {
         return <EventSlide
+            id={`event${index}`}
             image={event.image}
             title={event.title}
             description={event.description}

@@ -1,10 +1,11 @@
 ---
 path: "/events/IWD19"
 date: "2019-04-27"
+id: "iwd19"
 title: "IWD-'19"
 location: "Centre Culturel Ali Maachi - Bordj El Bahri, Algiers -"
 website: "https://iwd19-algiers.netlify.com/"
-picture: https://miro.medium.com/max/800/1*s0KUfzonlX2HQvHrboAmFw.png
+picture: https://raw.githubusercontent.com/WTM-Algiers/WTM-Algiers-Website/master/src/images/gatsby-astronaut.png
 facebook: "https://www.facebook.com/events/389148445016159/"
 twitter: ""
 github: ""
