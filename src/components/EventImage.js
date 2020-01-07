@@ -1,7 +1,6 @@
 import React from 'react';
 import './EventImage.css'
 const EventImage = ({id, image, width, height }) => {
-  console.log(image)
   return (
     <Frame
       id={id}

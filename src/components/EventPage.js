@@ -70,7 +70,7 @@ const EventPage = ({id, image, title, info, description, fb_link, twitter_link, 
               <span className="info-icon">
                 <img src={website} alt="website icon" />{" "}
               </span>
-              <a href={info.website} target="_blank">{info.website}</a>
+              <a href={info.website} target="_blank" rel="noopener noreferrer">{info.website}</a>
             </p>
           </div>
           <div className="page-description"> {description} </div>
