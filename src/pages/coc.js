@@ -7,6 +7,12 @@ import "../components/coc.css"
 
 const SecondPage = () => {
 
+  const getFullVersionCOC = event => {
+    const url = 'https://drive.google.com/file/d/0BwpQHA5WLZ2pMnJuTF9ubWlQUmhkdDMyTHJLdHVtUWFlb3VV/view?usp=sharing';
+    window.open(url, '_blank');
+  };
+
+
   return (
     <div className="page-container">
       <div className="coc-return-btn" >
@@ -64,7 +70,7 @@ const SecondPage = () => {
               up to and including expulsion from all GDG Algiers and WTM Algiers spaces or events and identification of
               that person as a harasser to other GDG Algiers or WTM Algiers members or the general public.
             </p>
-            <button className="flat-butt">Check the complete version!</button>
+            <button className="flat-butt" onClick={getFullVersionCOC}>Check the complete version!</button>
           </div>
         </div>
       </div>
