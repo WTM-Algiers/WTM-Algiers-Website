@@ -13,7 +13,7 @@ const AboutUs = () => {
         <p>
           Shaping the future of technology that will create the outlook we all
           want to live in by increasing visibility, community, and resources for
-          women in the field. In view of this, Google’s <b>Women TechMackers </b>
+          women in the field. In view of this, Google’s <b>Women Techmakers </b>
           program has been created in 2012, in order to spread learning and
           build role models globally, since, more than 200 communities have been
           launched locally. <b>WTM Algiers </b>is one of these communities, it aims to
