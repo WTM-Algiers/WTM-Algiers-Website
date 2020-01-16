@@ -5,7 +5,7 @@ id: "roadshowenp"
 title: "RoadShow-ENP"
 location: "ENP Algiers"
 website: "https://www.wtm-algiers.tech/events/WTMRoadShowENP"
-picture: https://raw.githubusercontent.com/WTM-Algiers/WTM-Algiers-Website/master/src/images/events/RSENP.jpeg
+picture: https://raw.githubusercontent.com/WTM-Algiers/WTM-Algiers-Website/master/src/images/events/RS-ENP.jpeg
 facebook: "https://www.facebook.com/events/enp-ecole-nationale-polytechnique-dalger/wtm-roadshow/523938235147599/"
 twitter: ""
 github: ""
