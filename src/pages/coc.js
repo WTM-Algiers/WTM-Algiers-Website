@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
+import SEO from "../components/seo";
 import returnbtn from "../images/Icons/back.svg";
 import green from "../images/shapes/green-shape-1.svg";
 import blue from "../images/shapes/blue-shape-1.svg";
@@ -15,6 +16,10 @@ const SecondPage = () => {
 
   return (
     <div className="page-container">
+      <SEO
+        description="Women TechMakers Algiers / WTM Algiers Official Website"
+        title="Code of conduct"
+      />
       <div className="coc-return-btn" >
         <Link to="/">
           <img src={returnbtn} alt="return" />
@@ -66,7 +71,9 @@ const SecondPage = () => {
             <p>
               If someone makes you or anyone else feel unsafe or unwelcome, please report it as soon as possible,
               either to the organizers <b>[WTM Algiers organizers can be identified by t-shirts/special badges/headsets.] </b>
-              or through <b><a href="https://docs.google.com/forms/d/e/1FAIpQLSdFfM1_78zLh29TBaNeCgZBtl9XV_JavfgcrYC90gww2PxPrA/viewform" target="_blank">[This form]</a>.</b> RESPONSE TEAM may take any action they deem appropriate,
+              or through
+              <b><a href="https://docs.google.com/forms/d/e/1FAIpQLSdFfM1_78zLh29TBaNeCgZBtl9XV_JavfgcrYC90gww2PxPrA/viewform" target="_blank"> [This form]</a>. </b>
+              RESPONSE TEAM may take any action they deem appropriate,
               up to and including expulsion from all GDG Algiers and WTM Algiers spaces or events and identification of
               that person as a harasser to other GDG Algiers or WTM Algiers members or the general public.
             </p>

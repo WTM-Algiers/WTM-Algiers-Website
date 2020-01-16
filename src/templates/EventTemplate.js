@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import SEO from "../components/seo";
 import EventPage from "../components/EventPage";
 
 export default function EventTemplate({
@@ -9,21 +10,28 @@ export default function EventTemplate({
   const { frontmatter } = markdownRemark
   return (
 
-    <EventPage
-      id={frontmatter.id}
-      title={frontmatter.title}
-      image={frontmatter.picture}
-      fb_link={frontmatter.facebook}
-      twitter_link={frontmatter.twitter}
-      github_link={frontmatter.github}
-      linkedin_link={frontmatter.linkedin}
-      info={{
-        location: frontmatter.location,
-        date: frontmatter.date,
-        website: frontmatter.website
-      }}
-      description={frontmatter.description}
-    />
+    <div>
+      <SEO
+        description="Women TechMakers Algiers / WTM Algiers Official Website"
+        title={frontmatter.title}
+      />
+      <EventPage
+        id={frontmatter.id}
+        title={frontmatter.title}
+        image={frontmatter.picture}
+        fb_link={frontmatter.facebook}
+        twitter_link={frontmatter.twitter}
+        github_link={frontmatter.github}
+        linkedin_link={frontmatter.linkedin}
+        info={{
+          location: frontmatter.location,
+          date: frontmatter.date,
+          website: frontmatter.website
+        }}
+        description={frontmatter.description}
+      />
+
+    </div>
   )
 }
 

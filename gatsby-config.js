@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Women TechMakers Algiers / WTM Algiers Official Website`,
+    title: `Women Techmakers Algiers`,
     description: `The offical website of the WTM Algiers Community, A community that supports Women in tech and tries its best to make the local community goes above their biases and make tech accessible`,
     author: `@gattalraouf`,
     siteUrl: 'https://www.wtm-algiers.tech'

@@ -26,7 +26,7 @@ const IndexPage = ({
     <Layout>
       <SEO
         description="Women TechMakers Algiers / WTM Algiers Official Website"
-        title="WTM Algiers Website Main Home"
+        title="Home"
       />
 
       <div id="section0">
