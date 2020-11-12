@@ -26,7 +26,7 @@ const landing = () => {
 
                         </div>
                         <div>
-                            <h1>Women Techmakers Algiers</h1>
+                            <h1>Women Techmakers Kolachi</h1>
                             <h2>More Women in technology</h2>
                         </div>
                     </div>
