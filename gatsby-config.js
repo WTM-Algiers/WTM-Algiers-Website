@@ -41,5 +41,5 @@ module.exports = {
     },
     `gatsby-transformer-remark`,
   ],
-  pathPrefix: "/WTM-Algiers-Website",
+  pathPrefix: "/WTM-Kolachi-Website",
 }
